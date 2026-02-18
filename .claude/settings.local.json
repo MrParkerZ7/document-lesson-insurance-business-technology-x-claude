@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git remote add:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd insurance business technology curriculum for IT developers and POs\n\nComprehensive 11-lesson curriculum covering:\n- Insurance fundamentals, products, and core processes\n- System architecture and data models\n- API design and security compliance\n- Development practices and testing strategies\n- DevOps, deployment, and product owner guide\n\nEach lesson includes learning objectives, diagrams, code examples,\nkey takeaways, and practical exercises.\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
