@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="Claude" version="22.1.0">
+  <diagram name="Stakeholder Relationships" id="stakeholder-relationships">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Insurance Stakeholder Relationships" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="500" y="30" width="400" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Regulator at top -->
+        <mxCell id="regulator" value="REGULATOR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontSize=14;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Oversight arrow -->
+        <mxCell id="oversight" value="Oversight" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;dashed=1;curved=1;" edge="1" parent="1" source="regulator" target="insurer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Policyholder -->
+        <mxCell id="policyholder" value="POLICYHOLDER" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="250" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Insurer -->
+        <mxCell id="insurer" value="INSURER" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="250" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Reinsurer -->
+        <mxCell id="reinsurer" value="REINSURER" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=14;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="250" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Agent/Broker -->
+        <mxCell id="agent" value="AGENT / BROKER" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=14;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="420" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Actuary -->
+        <mxCell id="actuary" value="ACTUARY" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=14;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="420" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Premium flow -->
+        <mxCell id="premium-flow" value="Premium" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;" edge="1" parent="1" source="policyholder" target="insurer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Reinsurance flow -->
+        <mxCell id="reinsurance-flow" value="Reinsurance" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=2;curved=1;flowAnimation=1;" edge="1" parent="1" source="insurer" target="reinsurer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Agent sales -->
+        <mxCell id="agent-sales" value="Sales" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=2;curved=1;" edge="1" parent="1" source="agent" target="policyholder">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Risk transfer -->
+        <mxCell id="risk-transfer" value="Risk Transfer" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;curved=1;dashed=1;" edge="1" parent="1" source="actuary" target="insurer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Legend -->
+        <mxCell id="legend-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="400" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-title" value="Legend" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="410" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-1" value="→ Money Flow" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="440" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-2" value="⇢ Risk Transfer" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="465" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-3" value="⇠ Oversight" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="490" width="100" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

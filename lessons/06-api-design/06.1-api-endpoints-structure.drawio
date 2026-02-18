@@ -1,0 +1,110 @@
+<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="Claude" version="22.1.0">
+  <diagram name="API Endpoints Structure" id="api-endpoints">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Insurance API Endpoints Structure" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="400" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Base URL -->
+        <mxCell id="base" value="/api/v1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#333333;strokeColor=#333333;fontColor=#FFFFFF;fontStyle=1;fontSize=14;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="80" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Connectors from base -->
+        <mxCell id="c1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1" source="base" target="customers">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1" source="base" target="quotes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1" source="base" target="policies">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1" source="base" target="claims">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;" edge="1" parent="1" source="base" target="products">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- /customers -->
+        <mxCell id="customers" value="/customers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="180" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cust-ops" value="GET / POST /{id}&#xa;GET /{id}/policies&#xa;GET /{id}/claims&#xa;POST /{id}/kyc" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=10;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="100" y="220" width="120" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- /quotes -->
+        <mxCell id="quotes" value="/quotes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="180" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="quote-ops" value="POST / GET /{id}&#xa;POST /{id}/calculate&#xa;POST /{id}/convert&#xa;GET /{id}/compare" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=10;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="300" y="220" width="120" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- /policies -->
+        <mxCell id="policies" value="/policies" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="180" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="policy-ops" value="GET / POST /{id}&#xa;POST /{id}/endorse&#xa;POST /{id}/renew&#xa;POST /{id}/cancel&#xa;GET /{id}/documents" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=10;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="500" y="220" width="120" height="85" as="geometry" />
+        </mxCell>
+
+        <!-- /claims -->
+        <mxCell id="claims" value="/claims" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="180" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="claim-ops" value="GET / POST /{id}&#xa;POST /{id}/assess&#xa;POST /{id}/approve&#xa;POST /{id}/settle&#xa;GET /{id}/timeline" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=10;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="700" y="220" width="120" height="85" as="geometry" />
+        </mxCell>
+
+        <!-- /products -->
+        <mxCell id="products" value="/products" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="180" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="product-ops" value="GET / GET /{id}&#xa;GET /{id}/plans&#xa;GET /{id}/coverages&#xa;GET /{id}/rates" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=10;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="900" y="220" width="120" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- HTTP Methods Legend -->
+        <mxCell id="legend" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="350" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-title" value="HTTP Methods" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="110" y="355" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="get" value="GET" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="115" y="380" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="get-t" value="Retrieve" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="175" y="380" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="post" value="POST" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="115" y="405" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="post-t" value="Create / Action" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="175" y="405" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="put" value="PUT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="380" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="put-t" value="Update" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="320" y="380" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="del" value="DELETE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="405" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="del-t" value="Remove" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="320" y="405" width="60" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,149 @@
+<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="Claude" version="22.1.0">
+  <diagram name="Product Hierarchy" id="product-hierarchy">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Insurance Product Configuration Hierarchy" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="400" y="30" width="400" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Line of Business -->
+        <mxCell id="lob" value="LINE OF BUSINESS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="100" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lob-ex" value="(Life, Health, Motor, Property)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="520" y="150" width="160" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Connector -->
+        <mxCell id="c1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;" edge="1" parent="1" source="lob" target="product">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Product -->
+        <mxCell id="product" value="PRODUCT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="200" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="product-ex" value="(Motor Comprehensive, Term Life)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="520" y="250" width="160" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Connector -->
+        <mxCell id="c2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;" edge="1" parent="1" source="product" target="plan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Plan -->
+        <mxCell id="plan" value="PLAN" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=14;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="300" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="plan-ex" value="(Basic, Standard, Premium)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="520" y="350" width="160" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Branch to Coverage, Premium, UW -->
+        <mxCell id="c3a" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=2;" edge="1" parent="1" source="plan" target="coverage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c3b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=2;" edge="1" parent="1" source="plan" target="premium-rules">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c3c" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=2;" edge="1" parent="1" source="plan" target="uw-rules">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Coverage -->
+        <mxCell id="coverage" value="COVERAGE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="420" width="140" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Coverage children -->
+        <mxCell id="c4a" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=1;" edge="1" parent="1" source="coverage" target="benefit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="benefit" value="Benefit" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="510" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="c4b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=1;" edge="1" parent="1" source="coverage" target="limit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="limit" value="Limit" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="510" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="c4c" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=1;" edge="1" parent="1" source="coverage" target="deductible">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="deductible" value="Deductible" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="510" width="80" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Premium Rules -->
+        <mxCell id="premium-rules" value="PREMIUM RULES" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="420" width="140" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Premium children -->
+        <mxCell id="c5a" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d6b656;strokeWidth=1;" edge="1" parent="1" source="premium-rules" target="base-rate">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="base-rate" value="Base Rate" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="510" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="c5b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d6b656;strokeWidth=1;" edge="1" parent="1" source="premium-rules" target="loadings">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="loadings" value="Loadings" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="510" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="c5c" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d6b656;strokeWidth=1;" edge="1" parent="1" source="premium-rules" target="discounts">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="discounts" value="Discounts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="510" width="80" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- UW Rules -->
+        <mxCell id="uw-rules" value="UNDERWRITING&#xa;RULES" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="420" width="140" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- UW children -->
+        <mxCell id="c6a" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=1;" edge="1" parent="1" source="uw-rules" target="eligibility">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eligibility" value="Eligibility" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="510" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="c6b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=1;" edge="1" parent="1" source="uw-rules" target="docs">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="docs" value="Documents" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="510" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="c6c" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=1;" edge="1" parent="1" source="uw-rules" target="medical">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="medical" value="Medical Req" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="510" width="80" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Riders (separate branch) -->
+        <mxCell id="c7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=2;dashed=1;" edge="1" parent="1" source="plan" target="riders">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="380" />
+              <mxPoint x="1100" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="riders" value="RIDERS&#xa;(Optional)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=13;shadow=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="420" width="140" height="50" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
