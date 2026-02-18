@@ -24,7 +24,7 @@ By the end of this lesson, you will be able to:
 
 | File | Description |
 |------|-------------|
-| [02.1-product-hierarchy.drawio](./03-product-configuration/02.1-product-hierarchy.drawio) | Product hierarchy structure |
+| [02.3-product-hierarchy.drawio](./03-product-configuration/02.3-product-hierarchy.drawio) | Product hierarchy structure |
 
 ---
 

@@ -16,19 +16,19 @@ By the end of this lesson, you will be able to:
 
 ## Sub-Lessons
 
-### [10.1 CI/CD Pipeline](./10.1-cicd-pipeline/README.md)
+### [10.1 CI/CD Pipeline](./01-cicd-pipeline/README.md)
 Learn how to design and implement continuous integration and continuous deployment pipelines using GitHub Actions, including build, test, security scanning, and deployment stages.
 
-### [10.2 Infrastructure as Code](./10.2-infrastructure-as-code/README.md)
+### [10.2 Infrastructure as Code](./02-infrastructure-as-code/README.md)
 Explore Kubernetes deployments and Terraform configurations for provisioning cloud infrastructure, including EKS clusters, RDS databases, ElastiCache, and MSK Kafka.
 
-### [10.3 Environment Strategy](./10.3-environment-strategy/README.md)
+### [10.3 Environment Strategy](./03-environment-strategy/README.md)
 Understand environment management from development through production, including data handling, access controls, and deployment triggers for each environment.
 
-### [10.4 Monitoring & Observability](./10.4-monitoring-observability/README.md)
+### [10.4 Monitoring & Observability](./04-monitoring-observability/README.md)
 Master the observability stack including metrics (Prometheus/Grafana), logging (ELK/Loki), distributed tracing (Jaeger/Zipkin), and alerting (PagerDuty/OpsGenie).
 
-### [10.5 Deployment Strategies](./10.5-deployment-strategies/README.md)
+### [10.5 Deployment Strategies](./05-deployment-strategies/README.md)
 Learn deployment strategies including Blue-Green and Canary deployments for zero-downtime releases with instant rollback capabilities.
 
 ---

@@ -229,4 +229,4 @@ spec:
 
 ## Navigation
 
-[Previous: 10.4 Monitoring & Observability](../10.4-monitoring-observability/README.md) | [Back to Lesson 10](../README.md)
+[Previous: 10.4 Monitoring & Observability](../04-monitoring-observability/README.md) | [Back to Lesson 10](../README.md)

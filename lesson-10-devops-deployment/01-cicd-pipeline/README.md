@@ -236,4 +236,4 @@ See the accompanying diagram file: [10.1-cicd-pipeline.drawio](./10.1-cicd-pipel
 
 ## Navigation
 
-[Back to Lesson 10](../README.md) | [Next: 10.2 Infrastructure as Code](../10.2-infrastructure-as-code/README.md)
+[Back to Lesson 10](../README.md) | [Next: 10.2 Infrastructure as Code](../02-infrastructure-as-code/README.md)

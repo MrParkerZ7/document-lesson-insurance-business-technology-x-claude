@@ -270,4 +270,4 @@ groups:
 
 ## Navigation
 
-[Previous: 10.3 Environment Strategy](../10.3-environment-strategy/README.md) | [Back to Lesson 10](../README.md) | [Next: 10.5 Deployment Strategies](../10.5-deployment-strategies/README.md)
+[Previous: 10.3 Environment Strategy](../03-environment-strategy/README.md) | [Back to Lesson 10](../README.md) | [Next: 10.5 Deployment Strategies](../05-deployment-strategies/README.md)

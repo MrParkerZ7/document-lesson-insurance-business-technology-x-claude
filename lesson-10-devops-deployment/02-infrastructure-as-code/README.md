@@ -330,4 +330,4 @@ module "msk" {
 
 ## Navigation
 
-[Previous: 10.1 CI/CD Pipeline](../10.1-cicd-pipeline/README.md) | [Back to Lesson 10](../README.md) | [Next: 10.3 Environment Strategy](../10.3-environment-strategy/README.md)
+[Previous: 10.1 CI/CD Pipeline](../01-cicd-pipeline/README.md) | [Back to Lesson 10](../README.md) | [Next: 10.3 Environment Strategy](../03-environment-strategy/README.md)

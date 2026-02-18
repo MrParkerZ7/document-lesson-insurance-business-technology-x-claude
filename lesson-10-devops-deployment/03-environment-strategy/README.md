@@ -206,4 +206,4 @@ $50,000.00            ->    $XX,XXX.00 (or $50,000.00 if non-sensitive)
 
 ## Navigation
 
-[Previous: 10.2 Infrastructure as Code](../10.2-infrastructure-as-code/README.md) | [Back to Lesson 10](../README.md) | [Next: 10.4 Monitoring & Observability](../10.4-monitoring-observability/README.md)
+[Previous: 10.2 Infrastructure as Code](../02-infrastructure-as-code/README.md) | [Back to Lesson 10](../README.md) | [Next: 10.4 Monitoring & Observability](../04-monitoring-observability/README.md)

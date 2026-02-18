@@ -20,7 +20,7 @@ By the end of this lesson, you will be able to:
 | File | Description |
 |------|-------------|
 | [11.1-po-knowledge-framework.drawio](./01-po-knowledge-areas/11.1-po-knowledge-framework.drawio) | Product Owner knowledge framework |
-| [11.2-prioritization-matrix.drawio](./03-feature-prioritization/11.2-prioritization-matrix.drawio) | Feature prioritization matrix |
+| [11.3-prioritization-matrix.drawio](./03-feature-prioritization/11.3-prioritization-matrix.drawio) | Feature prioritization matrix |
 
 ---
 

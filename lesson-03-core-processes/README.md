@@ -26,7 +26,7 @@ By the end of this lesson, you will be able to:
 | File | Description |
 |------|-------------|
 | [03.1-policy-lifecycle.drawio](./01-policy-lifecycle/03.1-policy-lifecycle.drawio) | Policy lifecycle states and transitions |
-| [03.2-claims-process-flow.drawio](./03-claims-management/03.2-claims-process-flow.drawio) | Claims processing workflow |
+| [03.3-claims-process-flow.drawio](./03-claims-management/03.3-claims-process-flow.drawio) | Claims processing workflow |
 
 ---
 
