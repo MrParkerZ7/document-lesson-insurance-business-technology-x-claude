@@ -10,17 +10,17 @@ This curriculum is organized into 11 detailed lessons. Click on each lesson to a
 
 | Lesson | Topic | Description |
 |--------|-------|-------------|
-| [01](./lessons/01-insurance-fundamentals/README.md) | **Insurance Fundamentals** | Business basics, stakeholders, value chain |
-| [02](./lessons/02-insurance-products/README.md) | **Insurance Products** | Life, health, motor, property products |
-| [03](./lessons/03-core-processes/README.md) | **Core Processes** | Underwriting, policy admin, claims, billing |
-| [04](./lessons/04-system-architecture/README.md) | **System Architecture** | Microservices, API gateway, event-driven |
-| [05](./lessons/05-data-models/README.md) | **Data Models** | Entity relationships, schemas, state machines |
-| [06](./lessons/06-api-design/README.md) | **API Design** | REST APIs, events, integrations |
-| [07](./lessons/07-security-compliance/README.md) | **Security & Compliance** | GDPR, RBAC, data protection |
-| [08](./lessons/08-development-practices/README.md) | **Development Practices** | Patterns, conventions, error handling |
-| [09](./lessons/09-testing-strategies/README.md) | **Testing Strategies** | Unit, integration, E2E testing |
-| [10](./lessons/10-devops-deployment/README.md) | **DevOps & Deployment** | CI/CD, IaC, monitoring |
-| [11](./lessons/11-product-owner-guide/README.md) | **Product Owner Guide** | User stories, KPIs, prioritization |
+| [01](./lesson-01-insurance-fundamentals/README.md) | **Insurance Fundamentals** | Business basics, stakeholders, value chain |
+| [02](./lesson-02-insurance-products/README.md) | **Insurance Products** | Life, health, motor, property products |
+| [03](./lesson-03-core-processes/README.md) | **Core Processes** | Underwriting, policy admin, claims, billing |
+| [04](./lesson-04-system-architecture/README.md) | **System Architecture** | Microservices, API gateway, event-driven |
+| [05](./lesson-05-data-models/README.md) | **Data Models** | Entity relationships, schemas, state machines |
+| [06](./lesson-06-api-design/README.md) | **API Design** | REST APIs, events, integrations |
+| [07](./lesson-07-security-compliance/README.md) | **Security & Compliance** | GDPR, RBAC, data protection |
+| [08](./lesson-08-development-practices/README.md) | **Development Practices** | Patterns, conventions, error handling |
+| [09](./lesson-09-testing-strategies/README.md) | **Testing Strategies** | Unit, integration, E2E testing |
+| [10](./lesson-10-devops-deployment/README.md) | **DevOps & Deployment** | CI/CD, IaC, monitoring |
+| [11](./lesson-11-product-owner-guide/README.md) | **Product Owner Guide** | User stories, KPIs, prioritization |
 
 ---
 

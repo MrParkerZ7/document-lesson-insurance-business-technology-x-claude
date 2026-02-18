@@ -1,0 +1,150 @@
+<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="Claude" version="22.1.0">
+  <diagram name="PO Knowledge Framework" id="po-knowledge-framework">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="800" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Product Owner Knowledge Framework" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="400" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Center - PO -->
+        <mxCell id="po-center" value="PRODUCT&#xa;OWNER" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;fontSize=16;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="300" width="120" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- Business Domain -->
+        <mxCell id="business-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="business-title" value="BUSINESS DOMAIN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="140" y="90" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="b1" value="Insurance Products" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="125" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" value="Underwriting" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="125" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" value="Claims Processing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="165" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b4" value="Regulatory" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="165" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b5" value="Distribution Channels" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="205" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b6" value="Pricing Models" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="205" width="110" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Technical Understanding -->
+        <mxCell id="tech-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="80" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-title" value="TECHNICAL UNDERSTANDING" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="870" y="90" width="220" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" value="API Architecture" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="125" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" value="Microservices" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="125" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t3" value="Data Models" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="165" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t4" value="Integrations" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="165" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t5" value="Security" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="205" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t6" value="CI/CD" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="205" width="110" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- User Experience -->
+        <mxCell id="ux-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="440" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ux-title" value="USER EXPERIENCE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="140" y="450" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="u1" value="Customer Journeys" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d79b00;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="485" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="u2" value="Agent Workflows" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d79b00;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="485" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="u3" value="Operations UX" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d79b00;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="525" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="u4" value="Self-Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d79b00;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="525" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="u5" value="Mobile Experience" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d79b00;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="565" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="u6" value="Accessibility" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d79b00;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="565" width="110" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Stakeholder Management -->
+        <mxCell id="stakeholder-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="440" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="stakeholder-title" value="STAKEHOLDER MANAGEMENT" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="870" y="450" width="220" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" value="Business Sponsors" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="485" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" value="Dev Team" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="485" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" value="End Users" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="525" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s4" value="Compliance" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="525" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s5" value="Architecture" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="565" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s6" value="External Partners" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="565" width="110" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Connecting Lines -->
+        <mxCell id="line1" value="" style="endArrow=none;html=1;strokeColor=#82b366;strokeWidth=3;curved=1;" edge="1" parent="1" source="business-box" target="po-center">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line2" value="" style="endArrow=none;html=1;strokeColor=#6c8ebf;strokeWidth=3;curved=1;" edge="1" parent="1" source="tech-box" target="po-center">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line3" value="" style="endArrow=none;html=1;strokeColor=#d79b00;strokeWidth=3;curved=1;" edge="1" parent="1" source="ux-box" target="po-center">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line4" value="" style="endArrow=none;html=1;strokeColor=#9673a6;strokeWidth=3;curved=1;" edge="1" parent="1" source="stakeholder-box" target="po-center">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Key Activities Box -->
+        <mxCell id="activities-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="480" width="320" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="activities-title" value="KEY PO ACTIVITIES" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="500" y="490" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="act-list" value="• Backlog prioritization &amp; grooming&#xa;• User story writing &amp; acceptance criteria&#xa;• Sprint planning &amp; reviews&#xa;• Stakeholder communication&#xa;• Roadmap planning&#xa;• KPI tracking &amp; reporting&#xa;• Feature definition &amp; scope management" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="440" y="515" width="280" height="115" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

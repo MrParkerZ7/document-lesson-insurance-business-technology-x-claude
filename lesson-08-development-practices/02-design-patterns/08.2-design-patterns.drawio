@@ -1,0 +1,224 @@
+<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="Claude" version="22.1.0">
+  <diagram name="Design Patterns" id="design-patterns">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Insurance System Design Patterns" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="500" y="20" width="400" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Repository Pattern -->
+        <mxCell id="repo-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="350" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="repo-title" value="REPOSITORY PATTERN" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="50" y="85" width="200" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="repo-interface" value="&lt;&lt;interface&gt;&gt;&#xa;IPolicyRepository&#xa;─────────────&#xa;+ findById(id)&#xa;+ save(policy)&#xa;+ delete(id)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6c8ebf;fontSize=10;align=left;verticalAlign=top;spacingLeft=5;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="120" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="repo-impl" value="PostgresPolicyRepo&#xa;─────────────&#xa;- db: Connection&#xa;─────────────&#xa;+ findById(id)&#xa;+ save(policy)&#xa;+ delete(id)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6c8ebf;fontSize=10;align=left;verticalAlign=top;spacingLeft=5;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="120" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="repo-arrow" value="implements" style="endArrow=block;endFill=0;html=1;strokeColor=#6c8ebf;strokeWidth=2;dashed=1;" edge="1" parent="1" source="repo-impl" target="repo-interface">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="repo-desc" value="Abstracts data access from business logic" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="60" y="250" width="300" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Factory Pattern -->
+        <mxCell id="factory-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="80" width="350" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="factory-title" value="FACTORY PATTERN" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="430" y="85" width="200" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="factory-class" value="QuoteFactory&#xa;─────────────&#xa;+ createMotorQuote()&#xa;+ createHealthQuote()&#xa;+ createLifeQuote()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;fontSize=10;align=left;verticalAlign=top;spacingLeft=5;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="115" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="quote-motor" value="MotorQuote" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="220" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="quote-health" value="HealthQuote" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="220" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="quote-life" value="LifeQuote" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="220" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="f-arr1" value="" style="endArrow=open;endFill=0;html=1;strokeColor=#82b366;strokeWidth=1;dashed=1;" edge="1" parent="1" source="factory-class" target="quote-motor">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f-arr2" value="" style="endArrow=open;endFill=0;html=1;strokeColor=#82b366;strokeWidth=1;dashed=1;" edge="1" parent="1" source="factory-class" target="quote-health">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f-arr3" value="" style="endArrow=open;endFill=0;html=1;strokeColor=#82b366;strokeWidth=1;dashed=1;" edge="1" parent="1" source="factory-class" target="quote-life">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="factory-desc" value="Encapsulates complex object creation" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="440" y="258" width="300" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- Strategy Pattern -->
+        <mxCell id="strategy-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="80" width="380" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="strategy-title" value="STRATEGY PATTERN" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="810" y="85" width="200" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="strategy-interface" value="&lt;&lt;interface&gt;&gt;&#xa;PremiumStrategy&#xa;─────────────&#xa;+ calculate(policy)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d79b00;fontSize=10;align=left;verticalAlign=top;spacingLeft=5;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="910" y="115" width="130" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="motor-strat" value="MotorPremium&#xa;Strategy" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d79b00;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="210" width="90" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="health-strat" value="HealthPremium&#xa;Strategy" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d79b00;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="210" width="90" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="life-strat" value="LifePremium&#xa;Strategy" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d79b00;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="210" width="90" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="s-arr1" value="" style="endArrow=block;endFill=0;html=1;strokeColor=#d79b00;strokeWidth=1;dashed=1;" edge="1" parent="1" source="motor-strat" target="strategy-interface">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s-arr2" value="" style="endArrow=block;endFill=0;html=1;strokeColor=#d79b00;strokeWidth=1;dashed=1;" edge="1" parent="1" source="health-strat" target="strategy-interface">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s-arr3" value="" style="endArrow=block;endFill=0;html=1;strokeColor=#d79b00;strokeWidth=1;dashed=1;" edge="1" parent="1" source="life-strat" target="strategy-interface">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="strategy-desc" value="Interchangeable algorithms for premium calculation" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="820" y="258" width="340" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- State Pattern -->
+        <mxCell id="state-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="310" width="450" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="state-title" value="STATE PATTERN (Policy Lifecycle)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="50" y="315" width="300" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="draft-state" value="Draft" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="360" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="quoted-state" value="Quoted" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="360" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="proposed-state" value="Proposed" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="360" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="active-state" value="Active" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="360" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lapsed-state" value="Lapsed" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="440" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cancelled-state" value="Cancelled" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="440" width="70" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="st-arr1" value="quote" style="endArrow=classic;html=1;strokeColor=#9673a6;strokeWidth=1;fontSize=9;" edge="1" parent="1" source="draft-state" target="quoted-state">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="st-arr2" value="propose" style="endArrow=classic;html=1;strokeColor=#9673a6;strokeWidth=1;fontSize=9;" edge="1" parent="1" source="quoted-state" target="proposed-state">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="st-arr3" value="issue" style="endArrow=classic;html=1;strokeColor=#9673a6;strokeWidth=1;fontSize=9;" edge="1" parent="1" source="proposed-state" target="active-state">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="st-arr4" value="lapse" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=1;fontSize=9;" edge="1" parent="1" source="active-state" target="lapsed-state">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="st-arr5" value="cancel" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=1;fontSize=9;" edge="1" parent="1" source="active-state" target="cancelled-state">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="st-arr6" value="reinstate" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=1;fontSize=9;curved=1;" edge="1" parent="1" source="lapsed-state" target="active-state">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="state-desc" value="Manages policy state transitions with validation" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="100" y="500" width="300" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- Observer Pattern -->
+        <mxCell id="observer-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="310" width="350" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="observer-title" value="OBSERVER PATTERN (Events)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="530" y="315" width="250" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="event-pub" value="PolicyService&#xa;(Publisher)&#xa;─────────────&#xa;+ issuePolicy()&#xa;+ emit(event)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#b85450;fontSize=10;align=left;verticalAlign=top;spacingLeft=5;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="350" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="event-bus" value="Event Bus&#xa;(Kafka)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="450" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sub1" value="Notification&#xa;Service" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="350" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sub2" value="Billing&#xa;Service" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="400" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sub3" value="Analytics&#xa;Service" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="450" width="90" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="obs-arr1" value="publish" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=1;fontSize=9;" edge="1" parent="1" source="event-pub" target="event-bus">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obs-arr2" value="" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=1;dashed=1;" edge="1" parent="1" source="event-bus" target="sub1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obs-arr3" value="" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=1;dashed=1;" edge="1" parent="1" source="event-bus" target="sub2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="obs-arr4" value="" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=1;dashed=1;" edge="1" parent="1" source="event-bus" target="sub3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="observer-desc" value="Decoupled event handling for notifications, billing, analytics" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="540" y="505" width="310" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- Specification Pattern -->
+        <mxCell id="spec-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="310" width="280" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="spec-title" value="SPECIFICATION PATTERN" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="910" y="315" width="220" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="spec-interface" value="&lt;&lt;interface&gt;&gt;&#xa;Specification&lt;T&gt;&#xa;─────────────&#xa;+ isSatisfiedBy(T)&#xa;+ and(Specification)&#xa;+ or(Specification)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d6b656;fontSize=10;align=left;verticalAlign=top;spacingLeft=5;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="345" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="age-spec" value="AgeEligibility&#xa;Spec" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d6b656;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="450" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sum-spec" value="SumInsured&#xa;Spec" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d6b656;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="450" width="90" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="sp-arr1" value="" style="endArrow=block;endFill=0;html=1;strokeColor=#d6b656;strokeWidth=1;dashed=1;" edge="1" parent="1" source="age-spec" target="spec-interface">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sp-arr2" value="" style="endArrow=block;endFill=0;html=1;strokeColor=#d6b656;strokeWidth=1;dashed=1;" edge="1" parent="1" source="sum-spec" target="spec-interface">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="spec-desc" value="Composable business rules validation" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="920" y="500" width="240" height="15" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
