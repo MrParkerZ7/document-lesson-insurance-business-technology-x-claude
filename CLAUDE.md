@@ -66,7 +66,7 @@ lesson-XX-topic-name/
 ### Styling Standards
 - Enable shadows on shapes (`shadow=1`)
 - Use curved arrows where appropriate (`curved=1`)
-- Add flow animation to directional arrows (`flowAnimation=1`)
+- Add flow animation to unidirectional arrows only (`flowAnimation=1`)
 - Use consistent color schemes:
   - Blue: Services/APIs
   - Green: Data/Storage
