@@ -1,0 +1,414 @@
+<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="Claude" version="22.1.0">
+  <diagram name="Life Insurance Products" id="life-insurance-products">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Life Insurance Product Types" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="550" y="30" width="400" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Central Life Insurance Hub -->
+        <mxCell id="life-hub" value="LIFE INSURANCE" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=16;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="100" width="140" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== TERM LIFE ==================== -->
+        <mxCell id="term-life" value="TERM LIFE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="130" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="term-arrow" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;curved=1;flowAnimation=1;" edge="1" parent="1" source="life-hub" target="term-life">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Term Life Features Box -->
+        <mxCell id="term-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="320" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="term-title" value="Key Features" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="50" y="205" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="term-f1" value="&#8226; Death Benefit Only" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="225" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="term-f2" value="&#8226; Fixed Premium Period (10/20/30 yrs)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="245" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="term-f3" value="&#8226; No Savings Component" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="265" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="term-f4" value="&#8226; Lowest Premium Cost" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="285" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="term-f5" value="&#8226; Convertible to Permanent (optional)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="305" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="term-conn" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=1;" edge="1" parent="1" source="term-life" target="term-box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== WHOLE LIFE ==================== -->
+        <mxCell id="whole-life" value="WHOLE LIFE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="130" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="whole-arrow" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;" edge="1" parent="1" source="life-hub" target="whole-life">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Whole Life Features Box -->
+        <mxCell id="whole-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="200" width="320" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="whole-title" value="Key Features" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="205" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="whole-f1" value="&#8226; Lifetime Death Benefit" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="225" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="whole-f2" value="&#8226; Cash Value Accumulation" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="245" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="whole-f3" value="&#8226; Fixed Premium (level)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="265" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="whole-f4" value="&#8226; Policy Loans Available" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="285" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="whole-f5" value="&#8226; Guaranteed Returns" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="305" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="whole-conn" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=1;" edge="1" parent="1" source="whole-life" target="whole-box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== ENDOWMENT ==================== -->
+        <mxCell id="endowment" value="ENDOWMENT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=14;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="450" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="endow-arrow" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=2;curved=1;flowAnimation=1;" edge="1" parent="1" source="life-hub" target="endowment">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="750" y="250" />
+              <mxPoint x="400" y="250" />
+              <mxPoint x="400" y="475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Endowment Features Box -->
+        <mxCell id="endow-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#9673a6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="520" width="320" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="endow-title" value="Key Features" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="50" y="525" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="endow-f1" value="&#8226; Death Benefit + Maturity Benefit" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="545" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="endow-f2" value="&#8226; Fixed Term (10/15/20 years)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="565" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="endow-f3" value="&#8226; Savings Component (Guaranteed)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="585" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="endow-f4" value="&#8226; Higher Premiums than Term" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="605" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="endow-f5" value="&#8226; Goal-based (Education, Marriage)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="625" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="endow-f6" value="&#8226; Bonus/Profit Participation" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="645" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="endow-conn" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=1;" edge="1" parent="1" source="endowment" target="endow-box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== ULIP ==================== -->
+        <mxCell id="ulip" value="ULIP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=14;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="450" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ulip-sub" value="Unit Linked Insurance Plan" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="670" y="500" width="160" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="ulip-arrow" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=2;curved=1;flowAnimation=1;" edge="1" parent="1" source="life-hub" target="ulip">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ULIP Features Box -->
+        <mxCell id="ulip-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#d79b00;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="535" width="320" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ulip-title" value="Key Features" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;fontColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="600" y="540" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ulip-f1" value="&#8226; Insurance + Investment Combined" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="600" y="560" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ulip-f2" value="&#8226; Market-linked Returns" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="600" y="580" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ulip-f3" value="&#8226; Fund Options (Equity/Debt/Balanced)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="600" y="600" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ulip-f4" value="&#8226; Flexible Premium Payment" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="600" y="620" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ulip-f5" value="&#8226; Switching Between Funds" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="600" y="640" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ulip-f6" value="&#8226; 5-Year Lock-in Period" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="600" y="660" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ulip-conn" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=1;" edge="1" parent="1" source="ulip" target="ulip-box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== ANNUITIES ==================== -->
+        <mxCell id="annuity" value="ANNUITIES" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=14;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="450" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="annuity-arrow" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;curved=1;flowAnimation=1;" edge="1" parent="1" source="life-hub" target="annuity">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="750" y="250" />
+              <mxPoint x="1100" y="250" />
+              <mxPoint x="1100" y="475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Annuity Features Box -->
+        <mxCell id="annuity-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#b85450;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="520" width="320" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="annuity-title" value="Key Features" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="525" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="annuity-f1" value="&#8226; Regular Income Stream" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="545" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="annuity-f2" value="&#8226; Retirement Planning Focus" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="565" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="annuity-f3" value="&#8226; Immediate or Deferred Options" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="585" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="annuity-f4" value="&#8226; Life/Joint/Period Certain Types" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="605" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="annuity-f5" value="&#8226; Lump Sum or Regular Premium" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="625" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="annuity-f6" value="&#8226; Pension/Retirement Corpus" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="645" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="annuity-conn" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=1;" edge="1" parent="1" source="annuity" target="annuity-box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== COMPARISON TABLE ==================== -->
+        <mxCell id="comparison-title" value="Product Comparison" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="590" y="730" width="320" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Table Header -->
+        <mxCell id="table-header" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#666666;strokeColor=#333333;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="770" width="1020" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="th1" value="Product" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="240" y="770" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="th2" value="Death Benefit" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="380" y="770" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="th3" value="Savings" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="500" y="770" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="th4" value="Investment" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="600" y="770" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="th5" value="Premium Cost" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="700" y="770" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="th6" value="Risk Level" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="820" y="770" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="th7" value="Best For" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="920" y="770" width="340" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Row 1: Term Life -->
+        <mxCell id="row1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="800" width="1020" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r1c1" value="Term Life" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="800" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r1c2" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="380" y="800" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r1c3" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="500" y="800" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r1c4" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="600" y="800" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r1c5" value="Lowest" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="700" y="800" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r1c6" value="Low" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="820" y="800" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r1c7" value="Pure Protection" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="920" y="800" width="340" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Row 2: Whole Life -->
+        <mxCell id="row2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="830" width="1020" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r2c1" value="Whole Life" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="830" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r2c2" value="Yes (Lifetime)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="380" y="830" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r2c3" value="Yes (Cash Value)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="500" y="830" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r2c4" value="Limited" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="600" y="830" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r2c5" value="High" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="700" y="830" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r2c6" value="Low" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="820" y="830" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r2c7" value="Long-term Protection + Savings" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="920" y="830" width="340" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Row 3: Endowment -->
+        <mxCell id="row3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="860" width="1020" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r3c1" value="Endowment" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="860" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r3c2" value="Yes + Maturity" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="380" y="860" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r3c3" value="Yes (Guaranteed)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="500" y="860" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r3c4" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="600" y="860" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r3c5" value="Medium-High" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="700" y="860" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r3c6" value="Low" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="820" y="860" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r3c7" value="Goal-based (Education, Marriage)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="920" y="860" width="340" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Row 4: ULIP -->
+        <mxCell id="row4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="890" width="1020" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r4c1" value="ULIP" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="890" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r4c2" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="380" y="890" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r4c3" value="Market-linked" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="500" y="890" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r4c4" value="Yes (Flexible)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="600" y="890" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r4c5" value="Medium" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="700" y="890" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r4c6" value="Medium-High" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="820" y="890" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r4c7" value="Protection + Wealth Creation" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="920" y="890" width="340" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Row 5: Annuity -->
+        <mxCell id="row5" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="920" width="1020" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r5c1" value="Annuity" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="920" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r5c2" value="Optional" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="380" y="920" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r5c3" value="Income Stream" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="500" y="920" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r5c4" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="600" y="920" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r5c5" value="Lump Sum" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="700" y="920" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r5c6" value="Low" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="820" y="920" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r5c7" value="Retirement Income" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="920" y="920" width="340" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Legend -->
+        <mxCell id="legend-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="730" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-title" value="Legend" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="50" y="740" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="765" width="15" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-1-txt" value="Protection Only" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="80" y="762" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="790" width="15" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-2-txt" value="Protection + Savings" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="80" y="787" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="815" width="15" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-3-txt" value="Investment Linked" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="80" y="812" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-4" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="840" width="15" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-4-txt" value="Income/Retirement" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="80" y="837" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-5" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="865" width="15" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-5-txt" value="Goal-based" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="80" y="862" width="100" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

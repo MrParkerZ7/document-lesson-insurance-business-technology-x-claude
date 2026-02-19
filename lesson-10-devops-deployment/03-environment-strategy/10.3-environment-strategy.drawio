@@ -1,0 +1,227 @@
+<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="Claude" version="22.1.0">
+  <diagram name="Environment Strategy" id="environment-strategy">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Environment Strategy &amp; Promotion Flow" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="500" y="20" width="500" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Environments Flow -->
+        <mxCell id="env-flow-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="1350" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="env-flow-label" value="ENVIRONMENT PROMOTION PIPELINE" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="90" y="85" width="280" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Development Environment -->
+        <mxCell id="dev-env" value="DEVELOPMENT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="130" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dev-details" value="Feature branches&#xa;Auto-deploy on commit&#xa;Synthetic data" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="110" y="190" width="150" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow Dev to Integration -->
+        <mxCell id="arr1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="dev-env" target="int-env">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Integration Environment -->
+        <mxCell id="int-env" value="INTEGRATION" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="130" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="int-details" value="Develop branch&#xa;API contract testing&#xa;Service integration" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="330" y="190" width="150" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Gate 1 -->
+        <mxCell id="gate1" value="Gate" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="135" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="gate1-label" value="Unit Tests&#xa;Code Coverage" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=8;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="485" y="185" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="arr2a" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="int-env" target="gate1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr2b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="gate1" target="qa-env">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- QA Environment -->
+        <mxCell id="qa-env" value="QA / TEST" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="130" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qa-details" value="Release candidates&#xa;E2E/Performance tests&#xa;Anonymized data" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="570" y="190" width="150" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Gate 2 -->
+        <mxCell id="gate2" value="Gate" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="135" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="gate2-label" value="E2E Tests&#xa;Security Scan" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=8;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="725" y="185" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="arr3a" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="qa-env" target="gate2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr3b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="gate2" target="stg-env">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Staging Environment -->
+        <mxCell id="stg-env" value="STAGING / UAT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="130" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stg-details" value="Pre-production&#xa;UAT sign-off&#xa;Production-like data" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="810" y="190" width="150" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Gate 3 (Manual Approval) -->
+        <mxCell id="gate3" value="Manual&#xa;Approval" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="130" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gate3-label" value="Business Sign-off&#xa;Change Advisory" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=8;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="965" y="190" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="arr4a" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="stg-env" target="gate3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr4b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="gate3" target="prod-env">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Production Environment -->
+        <mxCell id="prod-env" value="PRODUCTION" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;shadow=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="130" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="prod-details" value="Live system&#xa;Blue-Green deploy&#xa;Real customer data" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="190" width="150" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- DR Environment -->
+        <mxCell id="dr-env" value="DR Site" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;shadow=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="140" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dr-arr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=1;endArrow=none;endFill=0;dashed=1;" edge="1" parent="1" source="prod-env" target="dr-env">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Environment Details Section -->
+        <mxCell id="details-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="320" width="1350" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="details-label" value="ENVIRONMENT CONFIGURATION MATRIX" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="90" y="325" width="280" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Development Details -->
+        <mxCell id="dev-config-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f4fc;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="360" width="200" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="dev-config-title" value="DEV Environment" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="100" y="365" width="200" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="dev-config" value="Resources: Minimal&#xa;  - 1 node cluster&#xa;  - Shared database&#xa;  - Local Redis&#xa;&#xa;Data: Synthetic&#xa;  - Generated fixtures&#xa;  - Mocked services&#xa;&#xa;Access: All developers&#xa;&#xa;Refresh: On commit" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="110" y="395" width="180" height="170" as="geometry" />
+        </mxCell>
+
+        <!-- QA Details -->
+        <mxCell id="qa-config-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="360" width="200" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="qa-config-title" value="QA Environment" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="330" y="365" width="200" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="qa-config" value="Resources: Medium&#xa;  - 2 node cluster&#xa;  - Dedicated database&#xa;  - Redis cluster&#xa;&#xa;Data: Anonymized&#xa;  - Masked PII&#xa;  - Realistic volumes&#xa;&#xa;Access: QA Team + Dev&#xa;&#xa;Refresh: Weekly" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="340" y="395" width="180" height="170" as="geometry" />
+        </mxCell>
+
+        <!-- Staging Details -->
+        <mxCell id="stg-config-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#d79b00;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="360" width="200" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="stg-config-title" value="STAGING Environment" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="560" y="365" width="200" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="stg-config" value="Resources: Prod-like&#xa;  - 3 node cluster&#xa;  - HA database&#xa;  - Full Redis cluster&#xa;&#xa;Data: Production copy&#xa;  - Tokenized PII&#xa;  - Full data volumes&#xa;&#xa;Access: Restricted&#xa;&#xa;Refresh: Monthly" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="570" y="395" width="180" height="170" as="geometry" />
+        </mxCell>
+
+        <!-- Production Details -->
+        <mxCell id="prod-config-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#82b366;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="790" y="360" width="200" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="prod-config-title" value="PRODUCTION Environment" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="790" y="365" width="200" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="prod-config" value="Resources: Full scale&#xa;  - Auto-scaling 5-20&#xa;  - Multi-AZ database&#xa;  - Global Redis&#xa;&#xa;Data: Real&#xa;  - Customer data&#xa;  - Full encryption&#xa;&#xa;Access: Ops + SRE&#xa;&#xa;Changes: Controlled" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="800" y="395" width="180" height="170" as="geometry" />
+        </mxCell>
+
+        <!-- Data Handling Policies -->
+        <mxCell id="data-policies-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#b85450;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="360" width="200" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="data-policies-title" value="DATA HANDLING" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="365" width="200" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="data-policies" value="PII Protection:&#xa;  - Dev: Synthetic only&#xa;  - QA: Anonymized&#xa;  - Staging: Tokenized&#xa;  - Prod: Encrypted&#xa;&#xa;Data Masking:&#xa;  - SSN: XXX-XX-1234&#xa;  - Email: a***@***.com&#xa;  - Phone: (***) ***-1234&#xa;&#xa;Compliance: GDPR, SOC2" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="395" width="180" height="170" as="geometry" />
+        </mxCell>
+
+        <!-- Rollback Arrow -->
+        <mxCell id="rollback-arr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;endArrow=block;endFill=1;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="prod-env" target="stg-env">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1155" y="250" />
+              <mxPoint x="885" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rollback-label" value="Rollback if issues" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontStyle=2;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="960" y="252" width="100" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Legend -->
+        <mxCell id="legend-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="360" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-title" value="Legend" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="365" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" value="" style="rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1265" y="390" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="l1t" value="Dev/Integration" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1295" y="388" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" value="" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1265" y="415" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="l2t" value="QA/Production" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1295" y="413" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l3" value="" style="rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1265" y="440" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="l3t" value="Staging/UAT" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1295" y="438" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l4" value="" style="rhombus;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1265" y="462" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l4t" value="Quality Gate" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1295" y="463" width="80" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

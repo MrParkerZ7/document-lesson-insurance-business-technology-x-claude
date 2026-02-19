@@ -1,0 +1,241 @@
+<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="Claude" version="22.1.0">
+  <diagram name="Error Handling" id="error-handling">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Insurance System - Error Handling Strategy" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="450" y="20" width="500" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Exception Hierarchy -->
+        <mxCell id="hierarchy-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="500" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="hierarchy-title" value="EXCEPTION HIERARCHY" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="50" y="85" width="200" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="base-exception" value="BaseException&#xa;─────────────&#xa;- code: string&#xa;- message: string&#xa;- timestamp: Date&#xa;- correlationId: string" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;fontSize=11;align=left;verticalAlign=top;spacingLeft=5;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="115" width="180" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="business-exception" value="BusinessException&#xa;─────────────&#xa;- businessCode: string&#xa;- context: object" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;align=left;verticalAlign=top;spacingLeft=5;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="260" width="140" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="validation-exception" value="ValidationException&#xa;─────────────&#xa;- field: string&#xa;- violations: array" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;align=left;verticalAlign=top;spacingLeft=5;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="260" width="140" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="system-exception" value="SystemException&#xa;─────────────&#xa;- severity: string&#xa;- retryable: boolean" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;align=left;verticalAlign=top;spacingLeft=5;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="260" width="140" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="inherit-arr1" value="" style="endArrow=block;endFill=0;html=1;strokeColor=#9673a6;strokeWidth=2;" edge="1" parent="1" source="business-exception" target="base-exception">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inherit-arr2" value="" style="endArrow=block;endFill=0;html=1;strokeColor=#9673a6;strokeWidth=2;" edge="1" parent="1" source="validation-exception" target="base-exception">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inherit-arr3" value="" style="endArrow=block;endFill=0;html=1;strokeColor=#9673a6;strokeWidth=2;" edge="1" parent="1" source="system-exception" target="base-exception">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Specific Exceptions -->
+        <mxCell id="policy-not-found" value="PolicyNotFoundException" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d6b656;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="365" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="claim-rejected" value="ClaimRejectedException" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d6b656;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="405" width="130" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="invalid-premium" value="InvalidPremiumException" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6c8ebf;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="365" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="missing-field" value="MissingFieldException" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6c8ebf;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="405" width="130" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="db-error" value="DatabaseException" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#b85450;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="365" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="external-api" value="ExternalApiException" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#b85450;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="405" width="130" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="inherit-arr4" value="" style="endArrow=block;endFill=0;html=1;strokeColor=#d6b656;strokeWidth=1;dashed=1;" edge="1" parent="1" source="policy-not-found" target="business-exception">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inherit-arr5" value="" style="endArrow=block;endFill=0;html=1;strokeColor=#d6b656;strokeWidth=1;dashed=1;" edge="1" parent="1" source="claim-rejected" target="business-exception">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inherit-arr6" value="" style="endArrow=block;endFill=0;html=1;strokeColor=#6c8ebf;strokeWidth=1;dashed=1;" edge="1" parent="1" source="invalid-premium" target="validation-exception">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inherit-arr7" value="" style="endArrow=block;endFill=0;html=1;strokeColor=#6c8ebf;strokeWidth=1;dashed=1;" edge="1" parent="1" source="missing-field" target="validation-exception">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inherit-arr8" value="" style="endArrow=block;endFill=0;html=1;strokeColor=#b85450;strokeWidth=1;dashed=1;" edge="1" parent="1" source="db-error" target="system-exception">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inherit-arr9" value="" style="endArrow=block;endFill=0;html=1;strokeColor=#b85450;strokeWidth=1;dashed=1;" edge="1" parent="1" source="external-api" target="system-exception">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Global Exception Handler -->
+        <mxCell id="handler-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="80" width="500" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="handler-title" value="GLOBAL EXCEPTION HANDLER" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="570" y="85" width="280" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="handler-class" value="GlobalExceptionHandler&#xa;─────────────────────&#xa;@ControllerAdvice&#xa;─────────────────────&#xa;+ handleBusinessException()&#xa;+ handleValidationException()&#xa;+ handleSystemException()&#xa;+ handleUnknownException()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6c8ebf;fontSize=10;align=left;verticalAlign=top;spacingLeft=5;fontStyle=0;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="115" width="200" height="130" as="geometry" />
+        </mxCell>
+
+        <mxCell id="http-codes" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="115" width="240" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="http-title" value="HTTP Status Mapping" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="800" y="120" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="http-400" value="400 Bad Request" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="145" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="http-400-type" value="Validation" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="920" y="145" width="110" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="http-404" value="404 Not Found" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="175" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="http-404-type" value="Business" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="920" y="175" width="110" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="http-500" value="500 Internal Error" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="205" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="http-500-type" value="System" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="920" y="205" width="110" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Error Response Structure -->
+        <mxCell id="response-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="300" width="500" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="response-title" value="ERROR RESPONSE STRUCTURE" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="570" y="305" width="280" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="response-json" value="{&#xa;  &quot;error&quot;: {&#xa;    &quot;code&quot;: &quot;POLICY_NOT_FOUND&quot;,&#xa;    &quot;message&quot;: &quot;Policy with ID P-12345 not found&quot;,&#xa;    &quot;timestamp&quot;: &quot;2024-01-15T10:30:00Z&quot;,&#xa;    &quot;correlationId&quot;: &quot;req-abc-123&quot;,&#xa;    &quot;details&quot;: {&#xa;      &quot;policyId&quot;: &quot;P-12345&quot;&#xa;    }&#xa;  }&#xa;}" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;fontSize=10;align=left;verticalAlign=top;spacingLeft=10;spacingTop=5;fontFamily=Courier New;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="330" width="280" height="120" as="geometry" />
+        </mxCell>
+
+        <mxCell id="response-fields" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="330" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="fields-title" value="Response Fields" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="880" y="335" width="160" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="field1" value="code: Unique error identifier" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="880" y="355" width="160" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="field2" value="message: Human readable" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="880" y="375" width="160" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="field3" value="timestamp: ISO 8601 format" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="880" y="395" width="160" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="field4" value="correlationId: For tracing" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="880" y="415" width="160" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="field5" value="details: Context-specific" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="880" y="435" width="160" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- Error Handling Flow -->
+        <mxCell id="flow-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="480" width="1020" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-title" value="ERROR HANDLING FLOW" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="50" y="485" width="250" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="client" value="Client&#xa;Request" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d79b00;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="530" width="80" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="flow-arr1" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=2;curved=1;flowAnimation=1;" edge="1" parent="1" source="client" target="controller">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="controller" value="Controller&#xa;(API Layer)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="530" width="90" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="flow-arr2" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=2;curved=1;flowAnimation=1;" edge="1" parent="1" source="controller" target="service">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="service" value="Service&#xa;(Business)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="530" width="90" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="flow-arr3" value="" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=2;curved=1;" edge="1" parent="1" source="service" target="error-thrown">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="error-thrown" value="Exception&#xa;Thrown" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="520" width="90" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="flow-arr4" value="propagates" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=2;curved=1;" edge="1" parent="1" source="error-thrown" target="handler">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="handler" value="Global&#xa;Exception&#xa;Handler" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="525" width="80" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="flow-arr5" value="" style="endArrow=classic;html=1;strokeColor=#9673a6;strokeWidth=2;curved=1;flowAnimation=1;" edge="1" parent="1" source="handler" target="logging">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="logging" value="Logging&#xa;Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="525" width="80" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="flow-arr6" value="" style="endArrow=classic;html=1;strokeColor=#9673a6;strokeWidth=2;curved=1;flowAnimation=1;" edge="1" parent="1" source="handler" target="response">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="response" value="Error&#xa;Response" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="525" width="80" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="flow-arr7" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=2;curved=1;flowAnimation=1;" edge="1" parent="1" source="response" target="client-resp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="client-resp" value="Client&#xa;Receives&#xa;Error" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d79b00;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="525" width="80" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Best Practices Box -->
+        <mxCell id="best-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1;dashed=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="610" width="990" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="best-title" value="BEST PRACTICES:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="70" y="615" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="best-items" value="Never expose stack traces to clients  |  Use correlation IDs for tracing  |  Log all exceptions with context  |  Distinguish client vs server errors  |  Provide actionable error messages" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="70" y="635" width="970" height="30" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

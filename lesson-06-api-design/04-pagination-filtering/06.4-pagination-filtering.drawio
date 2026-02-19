@@ -1,0 +1,197 @@
+<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="Claude" version="22.1.0">
+  <diagram name="Pagination and Filtering Patterns" id="pagination-filtering">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Pagination and Filtering Patterns" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="450" y="20" width="500" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Offset-based Pagination Section -->
+        <mxCell id="offset-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="480" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="offset-title" value="OFFSET-BASED PAGINATION" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="100" y="90" width="280" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Offset Visual -->
+        <mxCell id="offset-data" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;" vertex="1" parent="1">
+          <mxGeometry x="100" y="130" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="od1" value="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e6e6e6;strokeColor=#999999;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="100" y="130" width="35" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="od2" value="2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e6e6e6;strokeColor=#999999;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="135" y="130" width="35" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="od3" value="3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="130" width="35" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="od4" value="4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="205" y="130" width="35" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="od5" value="5" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="130" width="35" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="od6" value="6" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="275" y="130" width="35" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="od7" value="7" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="310" y="130" width="35" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="od8" value="..." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="345" y="130" width="35" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="od9" value="N" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="380" y="130" width="35" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Offset Indicators -->
+        <mxCell id="offset-arrow" value="offset=2" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="135" y="165" width="50" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="limit-arrow" value="limit=3" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="195" y="165" width="50" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- Offset Request -->
+        <mxCell id="offset-req" value="GET /api/v1/policies?offset=2&amp;limit=3&#xa;&#xa;Response:&#xa;{&#xa;  &quot;data&quot;: [...3 items...],&#xa;  &quot;pagination&quot;: {&#xa;    &quot;offset&quot;: 2,&#xa;    &quot;limit&quot;: 3,&#xa;    &quot;total&quot;: 150,&#xa;    &quot;has_more&quot;: true&#xa;  }&#xa;}" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=9;align=left;spacingLeft=8;verticalAlign=top;spacingTop=5;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="100" y="190" width="220" height="170" as="geometry" />
+        </mxCell>
+
+        <!-- Offset Pros/Cons -->
+        <mxCell id="offset-pros" value="Pros:&#xa;• Simple to implement&#xa;• Easy page navigation&#xa;• Jump to any page&#xa;&#xa;Cons:&#xa;• Slow on large offsets&#xa;• Data shift issues&#xa;• Inconsistent results" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=9;align=left;spacingLeft=8;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="340" y="190" width="150" height="170" as="geometry" />
+        </mxCell>
+
+        <!-- Cursor-based Pagination Section -->
+        <mxCell id="cursor-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="580" y="80" width="480" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="cursor-title" value="CURSOR-BASED PAGINATION" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="600" y="90" width="280" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Cursor Visual -->
+        <mxCell id="cursor-data" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;" vertex="1" parent="1">
+          <mxGeometry x="600" y="130" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cd1" value="A" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e6e6e6;strokeColor=#999999;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="600" y="130" width="35" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cd2" value="B" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e6e6e6;strokeColor=#999999;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="635" y="130" width="35" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cd3" value="C" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="130" width="35" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cd4" value="D" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="705" y="130" width="35" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cd5" value="E" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="130" width="35" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cd6" value="F" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="775" y="130" width="35" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cd7" value="G" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="810" y="130" width="35" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cd8" value="..." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="845" y="130" width="35" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cd9" value="Z" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="880" y="130" width="35" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Cursor Indicator -->
+        <mxCell id="cursor-indicator" value="cursor=C" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="665" y="165" width="50" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="cursor-after" value="after cursor →" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="720" y="165" width="80" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- Cursor Request -->
+        <mxCell id="cursor-req" value="GET /api/v1/claims?cursor=abc123&amp;limit=3&#xa;&#xa;Response:&#xa;{&#xa;  &quot;data&quot;: [...3 items...],&#xa;  &quot;pagination&quot;: {&#xa;    &quot;next_cursor&quot;: &quot;def456&quot;,&#xa;    &quot;prev_cursor&quot;: &quot;xyz789&quot;,&#xa;    &quot;has_more&quot;: true&#xa;  }&#xa;}" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=9;align=left;spacingLeft=8;verticalAlign=top;spacingTop=5;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="600" y="190" width="240" height="170" as="geometry" />
+        </mxCell>
+
+        <!-- Cursor Pros/Cons -->
+        <mxCell id="cursor-pros" value="Pros:&#xa;• Consistent results&#xa;• Fast at any position&#xa;• Works with real-time data&#xa;&#xa;Cons:&#xa;• No page jumping&#xa;• Opaque cursor tokens&#xa;• More complex" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=9;align=left;spacingLeft=8;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="860" y="190" width="150" height="170" as="geometry" />
+        </mxCell>
+
+        <!-- Filtering Section -->
+        <mxCell id="filter-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="400" width="480" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="filter-title" value="FILTERING PATTERNS" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="100" y="410" width="200" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Filter Examples -->
+        <mxCell id="filter-examples" value="Simple Equality:&#xa;GET /policies?status=ACTIVE&amp;product_type=MOTOR&#xa;&#xa;Range Filters:&#xa;GET /claims?created_after=2024-01-01&amp;amount_min=1000&#xa;&#xa;Search:&#xa;GET /customers?q=john+smith&#xa;&#xa;Multiple Values (OR):&#xa;GET /policies?status=ACTIVE,PENDING&#xa;&#xa;Nested Filters:&#xa;GET /policies?customer.region=NORTH" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=9;align=left;spacingLeft=8;verticalAlign=top;spacingTop=5;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="100" y="445" width="310" height="180" as="geometry" />
+        </mxCell>
+
+        <!-- Filter Operators -->
+        <mxCell id="filter-ops" value="Filter Operators:&#xa;&#xa;eq    - equals&#xa;ne    - not equals&#xa;gt    - greater than&#xa;gte   - greater or equal&#xa;lt    - less than&#xa;lte   - less or equal&#xa;in    - in list&#xa;like  - pattern match" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=9;align=left;spacingLeft=8;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="430" y="445" width="120" height="160" as="geometry" />
+        </mxCell>
+
+        <!-- Sorting Section -->
+        <mxCell id="sort-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="580" y="400" width="230" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="sort-title" value="SORTING" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="600" y="410" width="100" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Sort Examples -->
+        <mxCell id="sort-examples" value="Single Field:&#xa;GET /policies?sort=created_at&#xa;&#xa;Descending:&#xa;GET /policies?sort=-premium&#xa;&#xa;Multiple Fields:&#xa;GET /policies?sort=-created_at,policy_number&#xa;&#xa;With Direction:&#xa;GET /claims?sort_by=amount&amp;order=desc" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=9;align=left;spacingLeft=8;verticalAlign=top;spacingTop=5;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="600" y="445" width="190" height="160" as="geometry" />
+        </mxCell>
+
+        <!-- Sort Conventions -->
+        <mxCell id="sort-conv" value="Conventions:&#xa;• - prefix = descending&#xa;• Default = ascending&#xa;• Comma separates fields" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="600" y="615" width="180" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- Field Selection Section -->
+        <mxCell id="fields-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="830" y="400" width="230" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="fields-title" value="FIELD SELECTION" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="850" y="410" width="160" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Fields Examples -->
+        <mxCell id="fields-examples" value="Include Specific Fields:&#xa;GET /policies?fields=id,number,status&#xa;&#xa;Exclude Fields:&#xa;GET /customers?exclude=ssn,dob&#xa;&#xa;Nested Selection:&#xa;GET /claims?fields=id,policy.number&#xa;&#xa;Expand Relations:&#xa;GET /policies?expand=customer,coverages" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#CCCCCC;fontSize=9;align=left;spacingLeft=8;verticalAlign=top;spacingTop=5;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="850" y="445" width="195" height="160" as="geometry" />
+        </mxCell>
+
+        <!-- Benefits -->
+        <mxCell id="fields-benefits" value="Benefits:&#xa;• Reduce payload size&#xa;• Faster responses&#xa;• Lower bandwidth" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="850" y="615" width="150" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- Combined Example -->
+        <mxCell id="combined-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="700" width="980" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="combined-title" value="COMBINED EXAMPLE" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="100" y="710" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="combined-example" value="GET /api/v1/policies?status=ACTIVE&amp;product_type=MOTOR&amp;created_after=2024-01-01&amp;sort=-premium&amp;fields=id,number,premium,customer.name&amp;cursor=abc123&amp;limit=20" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=10;align=left;spacingLeft=10;fontFamily=Courier New;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="740" width="940" height="40" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

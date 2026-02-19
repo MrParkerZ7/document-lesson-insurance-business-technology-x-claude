@@ -1,0 +1,273 @@
+<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="Claude" version="22.1.0">
+  <diagram name="Audit Trail Architecture" id="audit-trail">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Audit Trail Architecture for Insurance Systems" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="500" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Main Flow Background -->
+        <mxCell id="flow-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="80" width="1200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-title" value="AUDIT TRAIL PIPELINE" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="70" y="90" width="250" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Event Capture -->
+        <mxCell id="capture-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="130" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="capture-title" value="EVENT CAPTURE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="115" y="140" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="capture-app" value="Application&#xa;Events" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="95" y="170" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="capture-api" value="API&#xa;Calls" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="175" y="170" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="capture-db" value="Database&#xa;Changes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="135" y="215" width="90" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Processing -->
+        <mxCell id="process-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="130" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="process-title" value="PROCESSING" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="380" y="140" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="process-enrich" value="Enrich&#xa;Context" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="170" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="process-classify" value="Classify&#xa;Events" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="170" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="process-correlate" value="Correlate &amp; Sequence" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="215" width="130" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Storage -->
+        <mxCell id="storage-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="130" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="storage-title" value="AUDIT LOG STORAGE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="610" y="140" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="storage-hot" value="Hot Storage&#xa;(30 days)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="595" y="170" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="storage-cold" value="Cold Storage&#xa;(7+ years)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="695" y="170" width="70" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Reporting -->
+        <mxCell id="report-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="130" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="report-title" value="REPORTING" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="885" y="140" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="report-dash" value="Dashboards" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="845" y="170" width="70" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="report-alert" value="Alerts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="925" y="170" width="70" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="report-export" value="Compliance&#xa;Reports" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="845" y="210" width="70" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="report-search" value="Search &amp;&#xa;Query" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="925" y="210" width="70" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Retention -->
+        <mxCell id="retain-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="130" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="retain-title" value="RETENTION" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1105" y="140" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="retain-policy" value="Retention&#xa;Policies" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1095" y="170" width="75" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="retain-archive" value="Archive &amp;&#xa;Purge" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1095" y="210" width="75" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Flow Arrows -->
+        <mxCell id="arr1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=3;endArrow=blockThin;endFill=1;flowAnimation=1;curved=1;" edge="1" parent="1" source="capture-box" target="process-box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=3;endArrow=blockThin;endFill=1;flowAnimation=1;curved=1;" edge="1" parent="1" source="process-box" target="storage-box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=3;endArrow=blockThin;endFill=1;flowAnimation=1;curved=1;" edge="1" parent="1" source="storage-box" target="report-box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=3;endArrow=blockThin;endFill=1;flowAnimation=1;curved=1;" edge="1" parent="1" source="storage-box" target="retain-box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Events to Capture Section -->
+        <mxCell id="events-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="310" width="580" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="events-title" value="EVENTS TO CAPTURE" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="70" y="320" width="200" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Authentication Events -->
+        <mxCell id="auth-events" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="360" width="170" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="auth-title" value="Authentication Events" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="80" y="365" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="auth-list" value="- Login success/failure&#xa;- Logout&#xa;- Password changes&#xa;- MFA events&#xa;- Session timeout&#xa;- Token refresh" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="80" y="390" width="150" height="95" as="geometry" />
+        </mxCell>
+
+        <!-- Data Access Events -->
+        <mxCell id="data-events" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="255" y="360" width="170" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="data-title" value="Data Access Events" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="265" y="365" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="data-list" value="- PII data access&#xa;- Policy record views&#xa;- Claims data access&#xa;- Customer lookups&#xa;- Report generation&#xa;- Data exports" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="265" y="390" width="150" height="95" as="geometry" />
+        </mxCell>
+
+        <!-- Change Events -->
+        <mxCell id="change-events" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="360" width="170" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="change-title" value="Change Events" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="450" y="365" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="change-list" value="- Policy modifications&#xa;- Premium changes&#xa;- Claim status updates&#xa;- User role changes&#xa;- Configuration changes&#xa;- Approval workflows" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="450" y="390" width="150" height="95" as="geometry" />
+        </mxCell>
+
+        <!-- System Events -->
+        <mxCell id="sys-events" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="500" width="260" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="sys-title" value="System Events" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="80" y="505" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="sys-list" value="API errors, Batch job execution, System startup/shutdown, Configuration deployments" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="80" y="525" width="240" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Security Events -->
+        <mxCell id="sec-events" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="500" width="260" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="sec-title" value="Security Events" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="360" y="505" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="sec-list" value="Unauthorized access attempts, Privilege escalation, Suspicious patterns, Firewall blocks" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="360" y="525" width="240" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Audit Log Record Structure -->
+        <mxCell id="record-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="310" width="580" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="record-title" value="AUDIT LOG RECORD STRUCTURE" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="690" y="320" width="300" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Record Fields -->
+        <mxCell id="field-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="360" width="260" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="field-title" value="Core Fields" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="700" y="365" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="field-list" value="event_id: UUID&#xa;timestamp: ISO8601 (UTC)&#xa;event_type: String&#xa;actor_id: User/System ID&#xa;actor_type: USER|SYSTEM|API&#xa;actor_ip: IP Address&#xa;resource_type: String&#xa;resource_id: String&#xa;action: CREATE|READ|UPDATE|DELETE&#xa;outcome: SUCCESS|FAILURE&#xa;correlation_id: UUID" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;fontColor=#333333;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="700" y="390" width="240" height="170" as="geometry" />
+        </mxCell>
+
+        <!-- Context Fields -->
+        <mxCell id="context-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="360" width="260" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="context-title" value="Context &amp; Detail Fields" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="980" y="365" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="context-list" value="session_id: String&#xa;user_agent: String&#xa;request_path: String&#xa;previous_value: JSON (masked)&#xa;new_value: JSON (masked)&#xa;metadata: JSON&#xa;tenant_id: String&#xa;environment: DEV|UAT|PROD&#xa;service_name: String&#xa;service_version: String&#xa;hash_chain: SHA256" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;fontColor=#333333;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="980" y="390" width="240" height="170" as="geometry" />
+        </mxCell>
+
+        <!-- Retention Policies -->
+        <mxCell id="retention-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="620" width="400" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="retention-title" value="RETENTION POLICIES" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="70" y="630" width="180" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ret-hot" value="Hot Storage&#xa;30 days&#xa;Fast queries" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=0;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="665" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ret-warm" value="Warm Storage&#xa;1 year&#xa;Indexed" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;fontStyle=0;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="665" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ret-cold" value="Cold Archive&#xa;7+ years&#xa;Compliance" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=0;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="665" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ret-note" value="Regulatory requirements: SOX 7yrs, GDPR as needed, PCI-DSS 1yr" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="70" y="735" width="360" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Integrity -->
+        <mxCell id="integrity-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="620" width="360" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="integrity-title" value="LOG INTEGRITY &amp; SECURITY" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="500" y="630" width="220" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="int-hash" value="Hash Chain&#xa;Verification" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="665" width="90" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="int-sign" value="Digital&#xa;Signatures" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="605" y="665" width="90" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="int-worm" value="WORM&#xa;Storage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="665" width="90" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="int-note" value="Immutable audit logs prevent tampering and support forensics" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="500" y="720" width="320" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Access Control for Audit Logs -->
+        <mxCell id="access-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="620" width="380" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="access-title" value="AUDIT LOG ACCESS CONTROL" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="890" y="630" width="250" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="access-1" value="Security Team" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="665" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="access-2" value="Compliance Officers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1005" y="665" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="access-3" value="External Auditors" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="665" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="access-note" value="Read-only access with approval workflow. All access logged." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="890" y="710" width="340" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

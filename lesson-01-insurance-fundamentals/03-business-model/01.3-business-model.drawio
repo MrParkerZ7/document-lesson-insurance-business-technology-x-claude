@@ -1,0 +1,281 @@
+<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="Claude" version="22.1.0">
+  <diagram name="Insurance Business Model" id="business-model">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Insurance Company Business Model" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="450" y="20" width="500" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Central Insurance Company -->
+        <mxCell id="insurer-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="250" width="360" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="insurer-title" value="INSURANCE COMPANY" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="580" y="260" width="240" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Key Activities inside insurer box -->
+        <mxCell id="activities-label" value="KEY ACTIVITIES" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="630" y="295" width="140" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="underwriting" value="Underwriting&#xa;&amp; Risk Assessment" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="320" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="claims-mgmt" value="Claims&#xa;Management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="320" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="investment-mgmt" value="Investment&#xa;Management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="320" width="100" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="policy-admin" value="Policy&#xa;Administration" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="380" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="product-dev" value="Product&#xa;Development" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="380" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="distribution" value="Sales &amp;&#xa;Distribution" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="380" width="100" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Key Resources -->
+        <mxCell id="resources-label" value="KEY RESOURCES" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="540" y="440" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="resources" value="• Capital Reserves&#xa;• Actuarial Expertise&#xa;• IT Systems&#xa;• Agent Network" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="540" y="460" width="110" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Value Proposition -->
+        <mxCell id="value-label" value="VALUE PROPOSITION" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="660" y="440" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="value" value="• Risk Protection&#xa;• Financial Security&#xa;• Peace of Mind&#xa;• Compliance" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="660" y="460" width="100" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Revenue Streams (Left side - incoming) -->
+        <mxCell id="revenue-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="150" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="revenue-title" value="REVENUE STREAMS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="150" y="160" width="180" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="premiums" value="Premiums" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontStyle=1;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="195" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="premiums-detail" value="• New business&#xa;• Renewals&#xa;• Endorsements" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="130" y="235" width="100" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="investments" value="Investment Income" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontStyle=1;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="195" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="investments-detail" value="• Bond yields&#xa;• Equity returns&#xa;• Real estate" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="250" y="235" width="100" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fee-income" value="Fee Income" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="285" width="100" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="reinsurance-recovery" value="Reinsurance Recovery" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontStyle=1;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="285" width="110" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Revenue flows to insurer -->
+        <mxCell id="premium-flow" value="Premium Income" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=3;curved=1;flowAnimation=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="premiums" target="insurer-bg">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="investment-flow" value="Investment Returns" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=3;curved=1;flowAnimation=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="investments" target="insurer-bg">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Cost Structure (Right side - outgoing) -->
+        <mxCell id="costs-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="100" width="280" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="costs-title" value="COST STRUCTURE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="110" width="140" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="claims-cost" value="Claims Payouts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontStyle=1;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="145" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="claims-detail" value="• Loss payments&#xa;• LAE expenses&#xa;• Salvage/Subrogation" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="185" width="120" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="operating-cost" value="Operating Costs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontStyle=1;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="145" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="operating-detail" value="• Staff salaries&#xa;• IT systems&#xa;• Facilities" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="185" width="100" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="acquisition-cost" value="Acquisition Costs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontStyle=1;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="235" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="acquisition-detail" value="• Commissions&#xa;• Marketing&#xa;• Advertising" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="275" width="100" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="reinsurance-cost" value="Reinsurance" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="235" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="reinsurance-detail" value="• Treaty premiums&#xa;• Facultative&#xa;• Retrocession" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="275" width="100" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="regulatory-cost" value="Regulatory Costs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="325" width="100" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="reserves-cost" value="Reserve Requirements" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="325" width="120" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="taxes-cost" value="Taxes &amp; Levies" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="370" width="100" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-cost" value="Technology Investment" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="370" width="120" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Cost flows from insurer -->
+        <mxCell id="claims-outflow" value="Claims" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=3;curved=1;flowAnimation=1;exitX=1;exitY=0.2;exitDx=0;exitDy=0;" edge="1" parent="1" source="insurer-bg" target="claims-cost">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="operating-outflow" value="Operating" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;curved=1;flowAnimation=1;exitX=1;exitY=0.4;exitDx=0;exitDy=0;" edge="1" parent="1" source="insurer-bg" target="acquisition-cost">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="reinsurance-outflow" value="Reinsurance" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=2;curved=1;flowAnimation=1;exitX=1;exitY=0.6;exitDx=0;exitDy=0;" edge="1" parent="1" source="insurer-bg" target="reinsurance-cost">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Customer Segments (Bottom) -->
+        <mxCell id="customers-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="420" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="customers-title" value="CUSTOMER SEGMENTS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="140" y="430" width="200" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="individual" value="Individual" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="465" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="sme" value="SME" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="465" width="70" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="corporate" value="Corporate" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="465" width="70" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="customer-detail" value="• Personal lines (Motor, Home, Health, Life)&#xa;• Commercial lines (Property, Liability, WC)&#xa;• Specialty/Niche segments" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="120" y="510" width="250" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Customer to premium flow (bidirectional representation) -->
+        <mxCell id="customer-premium" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=2;curved=1;dashed=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="customers-bg" target="premiums">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Key Partners (External - Orange) -->
+        <mxCell id="partners-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="620" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="partners-title" value="KEY PARTNERS (External)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="150" y="630" width="180" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="reinsurers" value="Reinsurers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontStyle=1;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="665" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="agents-brokers" value="Agents/Brokers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontStyle=1;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="665" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vendors" value="TPAs/Vendors" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontStyle=1;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="665" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="banks" value="Banks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontStyle=1;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="700" width="70" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-partners" value="Tech Partners" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontStyle=1;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="700" width="80" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="regulators" value="Regulators" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;fontStyle=1;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="700" width="70" height="28" as="geometry" />
+        </mxCell>
+
+        <!-- Partner flow to insurer -->
+        <mxCell id="partner-flow" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=2;curved=1;dashed=1;entryX=0;entryY=0.85;entryDx=0;entryDy=0;" edge="1" parent="1" source="partners-bg" target="insurer-bg">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Profit Indicator -->
+        <mxCell id="profit-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="520" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="profit-title" value="PROFIT = Revenue - Costs" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="530" width="180" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="profit-metrics" value="Key Ratios:&#xa;• Loss Ratio = Claims / Premiums&#xa;• Expense Ratio = Operating Costs / Premiums&#xa;• Combined Ratio = Loss + Expense Ratio&#xa;• Investment Yield = Investment Income / Assets" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="555" width="250" height="65" as="geometry" />
+        </mxCell>
+
+        <!-- Legend -->
+        <mxCell id="legend-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="660" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-title" value="Legend" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="665" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" value="" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1035" y="690" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="l1t" value="Revenue / Services" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1065" y="688" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" value="" style="rounded=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1035" y="710" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="l2t" value="Costs / Outflows" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1065" y="708" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l3" value="" style="rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="690" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="l3t" value="External Partners" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="688" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l4" value="" style="rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="710" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="l4t" value="Customers" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="708" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l5" value="" style="rounded=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1035" y="730" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="l5t" value="Infrastructure" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1065" y="728" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l6" value="→" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=14;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="728" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l6t" value="Money Flow" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="728" width="80" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

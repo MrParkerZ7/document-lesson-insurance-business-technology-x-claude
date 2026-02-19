@@ -1,0 +1,297 @@
+<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="Claude" version="22.1.0">
+  <diagram name="Underwriting Process" id="underwriting-process">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1000" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Underwriting Process Flow" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="650" y="20" width="400" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Subtitle -->
+        <mxCell id="subtitle" value="Automated vs Manual Underwriting Paths" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="650" y="55" width="400" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== APPLICATION SUBMISSION ==================== -->
+        <mxCell id="app-submit" value="APPLICATION&#xa;SUBMISSION" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="150" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="app-submit-detail" value="• Customer data&#xa;• Product selection&#xa;• Coverage amounts&#xa;• Declarations" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="100" y="215" width="140" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- External: Customer Portal -->
+        <mxCell id="customer-portal" value="Customer&#xa;Portal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=0;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="100" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="portal-arrow" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="customer-portal" target="app-submit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- External: Agent/Broker -->
+        <mxCell id="agent-broker" value="Agent/&#xa;Broker" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=0;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="100" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="agent-arrow" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="agent-broker" target="app-submit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow to Initial Assessment -->
+        <mxCell id="a1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=3;endArrow=block;endFill=1;flowAnimation=1;" edge="1" parent="1" source="app-submit" target="initial-assess">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== INITIAL RISK ASSESSMENT ==================== -->
+        <mxCell id="initial-assess" value="INITIAL RISK&#xa;ASSESSMENT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="150" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="initial-assess-detail" value="• Rule engine check&#xa;• Risk scoring&#xa;• Pre-qualification&#xa;• Fraud indicators" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="320" y="215" width="140" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow to Decision Point -->
+        <mxCell id="a2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=3;endArrow=block;endFill=1;flowAnimation=1;" edge="1" parent="1" source="initial-assess" target="routing-decision">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== ROUTING DECISION ==================== -->
+        <mxCell id="routing-decision" value="ROUTING&#xa;DECISION" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="140" width="120" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== AUTOMATED PATH (TOP) ==================== -->
+        <mxCell id="auto-path-label" value="AUTOMATED PATH (STP)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="740" y="95" width="180" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Auto arrow -->
+        <mxCell id="a3-auto" value="Low Risk" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;endArrow=block;endFill=1;fontStyle=2;fontSize=10;curved=1;flowAnimation=1;" edge="1" parent="1" source="routing-decision" target="auto-verify">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Auto Verification -->
+        <mxCell id="auto-verify" value="AUTOMATED&#xa;VERIFICATION" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="115" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="auto-verify-detail" value="• API data checks&#xa;• Instant scoring" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="740" y="165" width="130" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow to Auto Pricing -->
+        <mxCell id="a4-auto" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;endArrow=block;endFill=1;flowAnimation=1;" edge="1" parent="1" source="auto-verify" target="auto-pricing">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Auto Pricing -->
+        <mxCell id="auto-pricing" value="AUTOMATED&#xa;PRICING" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="115" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="auto-pricing-detail" value="• Rating engine&#xa;• Premium calc" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="920" y="165" width="130" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== MANUAL PATH (BOTTOM) ==================== -->
+        <mxCell id="manual-path-label" value="MANUAL PATH (Underwriter Review)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="740" y="300" width="250" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Manual arrow -->
+        <mxCell id="a3-manual" value="High Risk / Complex" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;endArrow=block;endFill=1;fontStyle=2;fontSize=10;curved=1;flowAnimation=1;" edge="1" parent="1" source="routing-decision" target="medical-check">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Medical/Health Check -->
+        <mxCell id="medical-check" value="MEDICAL /&#xa;HEALTH CHECK" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="320" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="medical-check-detail" value="• Medical history&#xa;• Lab results&#xa;• Pre-existing conditions" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="740" y="370" width="130" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- External: Medical Provider -->
+        <mxCell id="medical-provider" value="Medical&#xa;Provider" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=0;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="755" y="420" width="70" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="med-prov-arrow" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=1;endArrow=block;endFill=1;dashed=1;" edge="1" parent="1" source="medical-provider" target="medical-check">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow to Financial Check -->
+        <mxCell id="a4-manual" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;endArrow=block;endFill=1;flowAnimation=1;" edge="1" parent="1" source="medical-check" target="financial-check">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Financial Check -->
+        <mxCell id="financial-check" value="FINANCIAL&#xa;CHECK" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="320" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="financial-check-detail" value="• Income verification&#xa;• Credit check&#xa;• Affordability" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="920" y="370" width="130" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- External: Credit Bureau -->
+        <mxCell id="credit-bureau" value="Credit&#xa;Bureau" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=0;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="420" width="70" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="credit-arrow" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=1;endArrow=block;endFill=1;dashed=1;" edge="1" parent="1" source="credit-bureau" target="financial-check">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow to Underwriter Review -->
+        <mxCell id="a5-manual" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;endArrow=block;endFill=1;flowAnimation=1;" edge="1" parent="1" source="financial-check" target="uw-review">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Underwriter Review -->
+        <mxCell id="uw-review" value="UNDERWRITER&#xa;REVIEW" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="320" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uw-review-detail" value="• Manual assessment&#xa;• Risk evaluation&#xa;• Special terms" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="370" width="130" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== UNDERWRITING DECISION ==================== -->
+        <mxCell id="uw-decision" value="UNDERWRITING&#xa;DECISION" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="200" width="130" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow from Auto Pricing to Decision -->
+        <mxCell id="a6-auto" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="auto-pricing" target="uw-decision">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1100" y="140" />
+              <mxPoint x="1100" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Arrow from UW Review to Decision -->
+        <mxCell id="a6-manual" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="uw-review" target="uw-decision">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1260" y="345" />
+              <mxPoint x="1260" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ==================== DECISION OUTCOMES ==================== -->
+
+        <!-- ACCEPT -->
+        <mxCell id="accept" value="ACCEPT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1500" y="130" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="a7-accept" value="Accept" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;endArrow=block;endFill=1;fontStyle=2;fontSize=10;curved=1;" edge="1" parent="1" source="uw-decision" target="accept">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- DECLINE -->
+        <mxCell id="decline" value="DECLINE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1500" y="220" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="a7-decline" value="Decline" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;endArrow=block;endFill=1;fontStyle=2;fontSize=10;curved=1;" edge="1" parent="1" source="uw-decision" target="decline">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- MODIFY/REFER -->
+        <mxCell id="modify" value="MODIFY /&#xa;REFER" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1500" y="310" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="a7-modify" value="Modify" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d6b656;strokeWidth=2;endArrow=block;endFill=1;fontStyle=2;fontSize=10;curved=1;" edge="1" parent="1" source="uw-decision" target="modify">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== FINAL PRICING ==================== -->
+        <mxCell id="final-pricing" value="FINAL PRICING&#xa;&amp; TERMS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1680" y="130" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="final-pricing-detail" value="• Premium calculation&#xa;• Exclusions&#xa;• Special conditions&#xa;• Loading/discounts" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1680" y="195" width="130" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="a8-pricing" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=3;endArrow=block;endFill=1;flowAnimation=1;" edge="1" parent="1" source="accept" target="final-pricing">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Modify loops back -->
+        <mxCell id="a9-modify-loop" value="Revised Terms" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d6b656;strokeWidth=2;endArrow=block;endFill=1;dashed=1;fontStyle=2;fontSize=10;curved=1;" edge="1" parent="1" source="modify" target="final-pricing">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1650" y="335" />
+              <mxPoint x="1650" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ==================== LEGEND ==================== -->
+        <mxCell id="legend" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="500" width="600" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-title" value="Legend" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="110" y="505" width="80" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Legend items row 1 -->
+        <mxCell id="l1" value="Services/APIs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="115" y="535" width="80" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" value="Data/Storage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="205" y="535" width="80" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="l3" value="External" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="295" y="535" width="80" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="l4" value="Security/Checks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="385" y="535" width="90" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="l5" value="Decision" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="485" y="530" width="70" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Legend items row 2 -->
+        <mxCell id="l6" value="Automated Flow" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="115" y="575" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l7" value="Manual Flow" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="225" y="575" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l8" value="→ Animated arrows show flow direction" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="315" y="575" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l9" value="⇢ Dashed arrows show optional/external data" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="315" y="595" width="250" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- STP indicator -->
+        <mxCell id="stp-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#82b366;strokeWidth=2;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="90" width="350" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- Manual indicator -->
+        <mxCell id="manual-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6c8ebf;strokeWidth=2;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="295" width="530" height="180" as="geometry" />
+        </mxCell>
+
+        <!-- Rating Engine (Infrastructure) -->
+        <mxCell id="rating-engine" value="Rating&#xa;Engine" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=0;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="185" width="70" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="rating-arrow" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=1;endArrow=none;endFill=0;startArrow=block;startFill=1;dashed=1;" edge="1" parent="1" source="rating-engine" target="auto-pricing">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

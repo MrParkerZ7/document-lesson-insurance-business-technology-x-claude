@@ -1,0 +1,383 @@
+<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="Claude" version="22.1.0">
+  <diagram name="Deployment Strategies" id="deployment-strategies">
+    <mxGraphModel dx="1400" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Deployment Strategies Comparison" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="500" y="20" width="500" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Blue-Green Deployment Section -->
+        <mxCell id="bg-section" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#82b366;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="680" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="bg-title" value="BLUE-GREEN DEPLOYMENT" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="100" y="90" width="250" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="bg-desc" value="Zero-downtime deployment with instant rollback capability" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="100" y="115" width="300" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Load Balancer -->
+        <mxCell id="bg-lb" value="Load Balancer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="150" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Blue Environment -->
+        <mxCell id="bg-blue-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="220" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="bg-blue-label" value="BLUE (v1.0 - Current)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="140" y="225" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bg-blue-pods" value="Pod 1&#xa;Pod 2&#xa;Pod 3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="260" width="120" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Green Environment -->
+        <mxCell id="bg-green-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="220" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="bg-green-label" value="GREEN (v2.0 - New)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="380" y="225" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bg-green-pods" value="Pod 1&#xa;Pod 2&#xa;Pod 3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="260" width="120" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows for Blue-Green -->
+        <mxCell id="bg-arr-blue" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="bg-lb" target="bg-blue-bg">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bg-arr-green" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;endArrow=block;endFill=1;dashed=1;" edge="1" parent="1" source="bg-lb" target="bg-green-bg">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Switch indicator -->
+        <mxCell id="bg-switch" value="Switch&#xa;Traffic" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="325" y="200" width="70" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Blue-Green Pros/Cons -->
+        <mxCell id="bg-pros" value="Pros:&#xa;- Zero downtime&#xa;- Instant rollback&#xa;- Full testing in prod-like env" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="610" y="150" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="bg-cons" value="Cons:&#xa;- 2x resources needed&#xa;- Database migrations complex&#xa;- Higher cost" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="610" y="230" width="140" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- Canary Deployment Section -->
+        <mxCell id="canary-section" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#d79b00;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="780" y="80" width="680" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="canary-title" value="CANARY DEPLOYMENT" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="800" y="90" width="200" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="canary-desc" value="Gradual rollout with progressive traffic shifting" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="800" y="115" width="280" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Canary Load Balancer -->
+        <mxCell id="canary-lb" value="Ingress /&#xa;Service Mesh" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="145" width="100" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Canary Stable -->
+        <mxCell id="canary-stable-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="220" width="180" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="canary-stable-label" value="STABLE (v1.0) - 90%" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="830" y="225" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="canary-stable-pods" value="Pod 1   Pod 2&#xa;Pod 3   Pod 4&#xa;Pod 5   Pod 6&#xa;Pod 7   Pod 8&#xa;Pod 9" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="255" width="120" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- Canary New -->
+        <mxCell id="canary-new-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="220" width="130" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="canary-new-label" value="CANARY (v2.0) - 10%" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="225" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="canary-new-pods" value="Pod 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="270" width="70" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Canary Arrows -->
+        <mxCell id="canary-arr-stable" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=3;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="canary-lb" target="canary-stable-bg">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="canary-arr-new" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=1;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="canary-lb" target="canary-new-bg">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Canary Progression -->
+        <mxCell id="canary-prog" value="Traffic: 1% → 5% → 10% → 25% → 50% → 100%" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=10;fontStyle=2;fontColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="870" y="195" width="280" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Canary Pros/Cons -->
+        <mxCell id="canary-pros" value="Pros:&#xa;- Gradual risk exposure&#xa;- Real user feedback&#xa;- Easy to pause/rollback" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="150" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="canary-cons" value="Cons:&#xa;- Slower rollout&#xa;- Needs good monitoring&#xa;- Complex traffic routing" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="230" width="150" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- Rolling Update Section -->
+        <mxCell id="rolling-section" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#6c8ebf;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="400" width="1380" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="rolling-title" value="ROLLING UPDATE (Kubernetes Default)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="100" y="410" width="300" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="rolling-desc" value="Gradual replacement of pods with new version while maintaining availability" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="100" y="435" width="400" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Rolling Stages -->
+        <!-- Stage 1 -->
+        <mxCell id="stage1-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="470" width="190" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="stage1-label" value="Stage 1: Initial" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="110" y="475" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="s1-p1" value="v1.0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="510" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="s1-p2" value="v1.0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="510" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="s1-p3" value="v1.0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="555" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="s1-p4" value="v1.0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="555" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="s1-desc" value="All pods running v1.0" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="110" y="605" width="190" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow 1-2 -->
+        <mxCell id="arr-1-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="stage1-bg" target="stage2-bg">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Stage 2 -->
+        <mxCell id="stage2-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="470" width="190" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="stage2-label" value="Stage 2: 25% Rollout" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="340" y="475" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="s2-p1" value="v2.0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="510" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="s2-p2" value="v1.0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="510" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="s2-p3" value="v1.0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="555" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="s2-p4" value="v1.0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="555" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="s2-desc" value="1 pod updated to v2.0" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="340" y="605" width="190" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow 2-3 -->
+        <mxCell id="arr-2-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="stage2-bg" target="stage3-bg">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Stage 3 -->
+        <mxCell id="stage3-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="470" width="190" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="stage3-label" value="Stage 3: 50% Rollout" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="570" y="475" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="s3-p1" value="v2.0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="510" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="s3-p2" value="v2.0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="510" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="s3-p3" value="v1.0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="555" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="s3-p4" value="v1.0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="555" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="s3-desc" value="2 pods updated to v2.0" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="570" y="605" width="190" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow 3-4 -->
+        <mxCell id="arr-3-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="stage3-bg" target="stage4-bg">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Stage 4 -->
+        <mxCell id="stage4-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="470" width="190" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="stage4-label" value="Stage 4: 75% Rollout" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="800" y="475" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="s4-p1" value="v2.0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="510" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="s4-p2" value="v2.0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="510" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="s4-p3" value="v2.0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="555" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="s4-p4" value="v1.0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="555" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="s4-desc" value="3 pods updated to v2.0" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="800" y="605" width="190" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow 4-5 -->
+        <mxCell id="arr-4-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="stage4-bg" target="stage5-bg">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Stage 5 Complete -->
+        <mxCell id="stage5-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#82b366;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="470" width="190" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="stage5-label" value="Stage 5: Complete" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="475" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="s5-p1" value="v2.0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="510" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="s5-p2" value="v2.0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="510" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="s5-p3" value="v2.0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="555" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="s5-p4" value="v2.0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="555" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="s5-desc" value="All pods running v2.0" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="605" width="190" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Rolling Pros/Cons -->
+        <mxCell id="rolling-pros" value="Pros: Resource efficient, Built into K8s, No extra infra needed" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="490" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rolling-cons" value="Cons: Slower rollback, Mixed versions during rollout" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="550" width="200" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Rollback Flow Section -->
+        <mxCell id="rollback-section" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#b85450;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="700" width="1380" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="rollback-title" value="ROLLBACK FLOW" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="100" y="710" width="150" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Monitoring -->
+        <mxCell id="rb-monitoring" value="Monitoring&#xa;Alerts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="760" width="100" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Issue Detected -->
+        <mxCell id="rb-issue" value="Issue&#xa;Detected" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="755" width="80" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow to Issue -->
+        <mxCell id="rb-arr1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="rb-monitoring" target="rb-issue">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Auto Rollback -->
+        <mxCell id="rb-auto" value="Automatic&#xa;Rollback" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="760" width="100" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow to Auto -->
+        <mxCell id="rb-arr2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="rb-issue" target="rb-auto">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Switch Traffic -->
+        <mxCell id="rb-switch" value="Switch Traffic&#xa;to Previous" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="760" width="100" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow to Switch -->
+        <mxCell id="rb-arr3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="rb-auto" target="rb-switch">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Verify -->
+        <mxCell id="rb-verify" value="Verify&#xa;Health" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="760" width="100" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow to Verify -->
+        <mxCell id="rb-arr4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="rb-switch" target="rb-verify">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Post Mortem -->
+        <mxCell id="rb-postmortem" value="Post-Mortem&#xa;Analysis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="760" width="100" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow to Post Mortem -->
+        <mxCell id="rb-arr5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="rb-verify" target="rb-postmortem">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Rollback Times -->
+        <mxCell id="rb-times-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="750" width="350" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="rb-times-title" value="Rollback Time Comparison" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;fontStyle=1;fontColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="755" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rb-times" value="Blue-Green:    Instant (~1 second)&#xa;Canary:           Fast (~30 seconds)&#xa;Rolling Update: Slow (~minutes)&#xa;&#xa;Blue-Green is fastest for critical issues" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="780" width="300" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Legend -->
+        <mxCell id="legend-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="85" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-title" value="Version Legend" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="90" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" value="" style="rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1115" y="115" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="l1t" value="Current (v1.0)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1145" y="113" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" value="" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1115" y="140" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="l2t" value="New (v2.0)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1145" y="138" width="80" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

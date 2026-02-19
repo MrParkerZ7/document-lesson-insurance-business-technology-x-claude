@@ -1,0 +1,276 @@
+<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="Claude" version="22.1.0">
+  <diagram name="Unit Testing" id="unit-testing">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Unit Testing Approach" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="550" y="20" width="300" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- AAA Pattern Section -->
+        <mxCell id="aaa-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#82b366;strokeWidth=2;dashed=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="480" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="aaa-title" value="ARRANGE-ACT-ASSERT PATTERN" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="50" y="85" width="300" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Arrange -->
+        <mxCell id="arrange" value="ARRANGE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="120" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="arrange-desc" value="• Setup test data&#xa;• Create mocks&#xa;• Initialize SUT&#xa;• Configure dependencies" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="60" y="175" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow 1 -->
+        <mxCell id="arr1" value="" style="endArrow=classic;html=1;strokeColor=#666666;strokeWidth=2;curved=1;flowAnimation=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="205" y="145" as="sourcePoint" />
+            <mxPoint x="220" y="145" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Act -->
+        <mxCell id="act" value="ACT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="120" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="act-desc" value="• Execute method&#xa;• Call function&#xa;• Single operation&#xa;• Capture result" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="220" y="175" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow 2 -->
+        <mxCell id="arr2" value="" style="endArrow=classic;html=1;strokeColor=#666666;strokeWidth=2;curved=1;flowAnimation=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="365" y="145" as="sourcePoint" />
+            <mxPoint x="380" y="145" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Assert -->
+        <mxCell id="assert" value="ASSERT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="120" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="assert-desc" value="• Verify result&#xa;• Check state&#xa;• Validate mocks&#xa;• Assert exceptions" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="380" y="175" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Code Example -->
+        <mxCell id="code-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="245" width="440" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="code-label" value="Example: PolicyService Unit Test" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="65" y="248" width="200" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="code-content" value="// Arrange&#xa;const mockRepo = jest.fn();&#xa;const service = new PolicyService(mockRepo);&#xa;&#xa;// Act&#xa;const result = await service.calculatePremium(policy);&#xa;&#xa;// Assert&#xa;expect(result.amount).toBe(1500);" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontFamily=Courier New;fontColor=#555555;" vertex="1" parent="1">
+          <mxGeometry x="65" y="265" width="420" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Mocking Section -->
+        <mxCell id="mock-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#6c8ebf;strokeWidth=2;dashed=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="80" width="500" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="mock-title" value="MOCKING DEPENDENCIES" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="550" y="85" width="220" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- System Under Test -->
+        <mxCell id="sut" value="PolicyService&#xa;(System Under Test)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="120" width="130" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Mock Dependencies -->
+        <mxCell id="mock-repo" value="Mock&#xa;PolicyRepository" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;dashed=1;dashPattern=8 4;" vertex="1" parent="1">
+          <mxGeometry x="560" y="220" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="mock-calc" value="Mock&#xa;PremiumCalculator" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;dashed=1;dashPattern=8 4;" vertex="1" parent="1">
+          <mxGeometry x="700" y="220" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="mock-event" value="Mock&#xa;EventPublisher" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;dashed=1;dashPattern=8 4;" vertex="1" parent="1">
+          <mxGeometry x="840" y="220" width="110" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Dependency Arrows -->
+        <mxCell id="dep-arr1" value="" style="endArrow=classic;html=1;strokeColor=#d6b656;strokeWidth=1;dashed=1;curved=1;" edge="1" parent="1" source="sut" target="mock-repo">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep-arr2" value="" style="endArrow=classic;html=1;strokeColor=#d6b656;strokeWidth=1;dashed=1;" edge="1" parent="1" source="sut" target="mock-calc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep-arr3" value="" style="endArrow=classic;html=1;strokeColor=#d6b656;strokeWidth=1;dashed=1;curved=1;" edge="1" parent="1" source="sut" target="mock-event">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Mock Types -->
+        <mxCell id="mock-types-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="290" width="460" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="mock-types-title" value="Mock Types:" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="295" width="80" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="mock-types-content" value="Stub: Returns predefined values  |  Mock: Verifies interactions  |  Spy: Records calls  |  Fake: Working implementation" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="570" y="312" width="440" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Coverage Section -->
+        <mxCell id="coverage-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#c2185b;strokeWidth=2;dashed=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="80" width="280" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="coverage-title" value="COVERAGE TARGETS" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#c2185b;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="85" width="180" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Coverage Metrics -->
+        <mxCell id="cov-line" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="120" width="240" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cov-line-label" value="Line Coverage" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="125" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cov-line-val" value="≥ 80%" style="text;html=1;strokeColor=none;fillColor=none;align=right;fontSize=12;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="125" width="70" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cov-branch" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="165" width="240" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cov-branch-label" value="Branch Coverage" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="170" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cov-branch-val" value="≥ 75%" style="text;html=1;strokeColor=none;fillColor=none;align=right;fontSize=12;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="170" width="70" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cov-func" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="210" width="240" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cov-func-label" value="Function Coverage" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="215" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cov-func-val" value="≥ 90%" style="text;html=1;strokeColor=none;fillColor=none;align=right;fontSize=12;fontStyle=1;fontColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="215" width="70" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cov-stmt" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="255" width="240" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cov-stmt-label" value="Statement Coverage" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="260" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cov-stmt-val" value="≥ 80%" style="text;html=1;strokeColor=none;fillColor=none;align=right;fontSize=12;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="260" width="70" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cov-note" value="Critical paths: 100%" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=10;fontStyle=2;fontColor=#c2185b;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="300" width="240" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- PolicyService Example -->
+        <mxCell id="example-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e5f5;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="390" width="1300" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="example-title" value="EXAMPLE: PolicyService Unit Test Structure" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="50" y="395" width="350" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Test Class -->
+        <mxCell id="test-class" value="PolicyServiceTest" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="430" width="200" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="test-setup" value="@BeforeEach setUp()" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=10;" vertex="1" parent="test-class">
+          <mxGeometry y="26" width="200" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="test-methods" value="test_calculatePremium_valid()&#xa;test_calculatePremium_null()&#xa;test_issuePolicy_success()&#xa;test_issuePolicy_validation()&#xa;test_cancelPolicy_active()&#xa;test_cancelPolicy_invalid()" style="text;strokeColor=#6c8ebf;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=9;" vertex="1" parent="test-class">
+          <mxGeometry y="50" width="200" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- Test Categories -->
+        <mxCell id="cat-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="430" width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="cat-title" value="Test Categories" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;fontStyle=1;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="280" y="435" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cat-happy" value="Happy Path Tests" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="295" y="460" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cat-edge" value="Edge Cases" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="405" y="460" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cat-error" value="Error Handling" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="295" y="500" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cat-boundary" value="Boundary Tests" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="405" y="500" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cat-null" value="Null/Empty Input" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="295" y="540" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cat-perf" value="Performance" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="405" y="540" width="100" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Naming Convention -->
+        <mxCell id="naming-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="430" width="280" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="naming-title" value="Test Naming Convention" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;fontStyle=1;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="540" y="435" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="naming-pattern" value="method_scenario_expectedResult" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=10;fontFamily=Courier New;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="465" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="naming-ex1" value="calculatePremium_validPolicy_returnsAmount" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontFamily=Courier New;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="560" y="505" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="naming-ex2" value="issuePolicy_nullCustomer_throwsException" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontFamily=Courier New;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="560" y="525" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="naming-ex3" value="cancelPolicy_expiredPolicy_returnsFalse" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontFamily=Courier New;fontColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="560" y="545" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="naming-ex4" value="renewPolicy_validDates_updatesEndDate" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontFamily=Courier New;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="560" y="565" width="240" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Best Practices -->
+        <mxCell id="bp-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="430" width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="bp-title" value="Unit Test Best Practices" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;fontStyle=1;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="840" y="435" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bp-list" value="✓ Test one thing per test&#xa;✓ Keep tests independent&#xa;✓ Use descriptive names&#xa;✓ Avoid test interdependence&#xa;✓ Mock external dependencies&#xa;✓ Test edge cases&#xa;✓ Run tests in isolation&#xa;✓ Maintain fast execution" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="855" y="460" width="210" height="130" as="geometry" />
+        </mxCell>
+
+        <!-- Tools Box -->
+        <mxCell id="tools-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="430" width="220" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="tools-title" value="Unit Testing Tools" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=11;fontStyle=1;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="435" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="tools-java" value="Java: JUnit, Mockito, AssertJ" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1115" y="460" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="tools-js" value="JS/TS: Jest, Vitest, Sinon" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1115" y="485" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="tools-py" value="Python: pytest, unittest, mock" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1115" y="510" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="tools-net" value=".NET: xUnit, NUnit, Moq" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1115" y="535" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="tools-cov" value="Coverage: Istanbul, JaCoCo" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1115" y="560" width="190" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

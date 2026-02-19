@@ -1,0 +1,287 @@
+<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="Claude" version="22.1.0">
+  <diagram name="Monitoring and Observability" id="monitoring-observability">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Observability Stack - Three Pillars" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="500" y="20" width="500" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Application Layer -->
+        <mxCell id="app-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="1350" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="app-label" value="APPLICATION LAYER" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="90" y="85" width="160" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Services -->
+        <mxCell id="svc1" value="Quote&#xa;Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="115" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="svc2" value="Policy&#xa;Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="115" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="svc3" value="Claims&#xa;Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="115" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="svc4" value="Payment&#xa;Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="115" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="svc5" value="Customer&#xa;Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="115" width="90" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Instrumentation label -->
+        <mxCell id="instr-label" value="OpenTelemetry&#xa;Instrumentation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="120" width="100" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Three Pillars Section -->
+        <mxCell id="pillars-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#CCCCCC;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="1350" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="pillars-label" value="THREE PILLARS OF OBSERVABILITY" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="90" y="205" width="280" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Metrics Pillar -->
+        <mxCell id="metrics-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="240" width="400" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="metrics-title" value="METRICS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="250" y="250" width="100" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="prometheus" value="Prometheus" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="290" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="prom-desc" value="Time-series database&#xa;Pull-based collection" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="200" y="340" width="200" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="grafana" value="Grafana" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="380" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="grafana-desc" value="Visualization &amp; Dashboards" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="200" y="420" width="200" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="metrics-types" value="Metric Types:&#xa;- Request rate (req/s)&#xa;- Error rate (%)&#xa;- Latency (p50, p95, p99)&#xa;- Resource utilization&#xa;- Business metrics (KPIs)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="120" y="450" width="180" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow from services to Prometheus -->
+        <mxCell id="svc-prom" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="svc1" target="prometheus">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="165" y="200" />
+              <mxPoint x="300" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Logs Pillar -->
+        <mxCell id="logs-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="240" width="400" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="logs-title" value="LOGS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="670" y="250" width="100" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="loki" value="Grafana Loki" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="290" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="loki-desc" value="Log aggregation&#xa;Label-based indexing" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="620" y="340" width="200" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="elk-alt" value="or ELK Stack" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;shadow=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="380" width="200" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="elk-desc" value="Elasticsearch + Logstash + Kibana" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="620" y="415" width="200" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="log-types" value="Log Levels:&#xa;- ERROR: Exceptions, failures&#xa;- WARN: Degraded states&#xa;- INFO: Business events&#xa;- DEBUG: Detailed flow&#xa;- Structured JSON format" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="540" y="450" width="180" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow from services to Loki -->
+        <mxCell id="svc-loki" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="svc3" target="loki">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="385" y="195" />
+              <mxPoint x="720" y="195" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Traces Pillar -->
+        <mxCell id="traces-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#d79b00;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="240" width="400" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="traces-title" value="TRACES" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="250" width="100" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="jaeger" value="Jaeger" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="290" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="jaeger-desc" value="Distributed tracing&#xa;Request flow visualization" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="340" width="200" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="tempo-alt" value="or Grafana Tempo" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;shadow=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="380" width="200" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="tempo-desc" value="High-scale trace storage" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="415" width="200" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="trace-info" value="Trace Data:&#xa;- Trace ID (correlation)&#xa;- Span ID (operation)&#xa;- Service dependencies&#xa;- Latency breakdown&#xa;- Error propagation" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="960" y="450" width="180" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow from services to Jaeger -->
+        <mxCell id="svc-jaeger" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="svc5" target="jaeger">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="605" y="190" />
+              <mxPoint x="1140" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Alerting Section -->
+        <mxCell id="alert-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#b85450;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="570" width="1350" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="alert-label" value="ALERTING &amp; INCIDENT RESPONSE" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="90" y="575" width="260" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Alertmanager -->
+        <mxCell id="alertmanager" value="Alertmanager" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="610" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="am-desc" value="Alert routing&#xa;Grouping &amp; silencing" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="200" y="660" width="150" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow from Prometheus to Alertmanager -->
+        <mxCell id="prom-alert" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="prometheus" target="alertmanager">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Alert Rules -->
+        <mxCell id="alert-rules" value="Alert Rules:&#xa;- High error rate (&gt;1%)&#xa;- High latency (&gt;2s p99)&#xa;- Service down&#xa;- Resource exhaustion&#xa;- SLA breach" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="610" width="150" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- PagerDuty -->
+        <mxCell id="pagerduty" value="PagerDuty" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="610" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pd-desc" value="On-call management&#xa;Escalation policies" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="600" y="650" width="140" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- OpsGenie -->
+        <mxCell id="opsgenie" value="OpsGenie" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="690" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow to PagerDuty/OpsGenie -->
+        <mxCell id="alert-pd" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="alertmanager" target="pagerduty">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="alert-og" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="alertmanager" target="opsgenie">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Slack -->
+        <mxCell id="slack" value="Slack" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="610" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="slack-desc" value="Team notifications" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="780" y="650" width="100" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow to Slack -->
+        <mxCell id="alert-slack" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="alertmanager" target="slack">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- SRE Team -->
+        <mxCell id="sre" value="SRE / DevOps&#xa;Team" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="630" width="120" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow to SRE -->
+        <mxCell id="pd-sre" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="pagerduty" target="sre">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Runbook -->
+        <mxCell id="runbook" value="Runbooks&#xa;&amp; Automation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="630" width="120" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow to Runbook -->
+        <mxCell id="sre-runbook" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="sre" target="runbook">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Incident Resolution -->
+        <mxCell id="resolution" value="Incident&#xa;Resolution" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="630" width="100" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow to Resolution -->
+        <mxCell id="runbook-res" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="runbook" target="resolution">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Legend -->
+        <mxCell id="legend-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="85" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-title" value="Data Flow" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="870" y="90" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l1-arr" value="" style="endArrow=block;html=1;strokeColor=#82b366;strokeWidth=2;flowAnimation=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="875" y="120" as="sourcePoint" />
+            <mxPoint x="925" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l1t" value="Metrics flow" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="935" y="112" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l2-arr" value="" style="endArrow=block;html=1;strokeColor=#6c8ebf;strokeWidth=2;flowAnimation=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="875" y="140" as="sourcePoint" />
+            <mxPoint x="925" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l2t" value="Logs flow" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="935" y="132" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l3-arr" value="" style="endArrow=block;html=1;strokeColor=#d79b00;strokeWidth=2;flowAnimation=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="875" y="160" as="sourcePoint" />
+            <mxPoint x="925" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l3t" value="Traces flow" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="935" y="152" width="80" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

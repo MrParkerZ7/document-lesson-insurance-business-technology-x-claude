@@ -1,0 +1,280 @@
+<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="Claude" version="22.1.0">
+  <diagram name="Key Performance Indicators" id="key-performance-indicators">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Insurance KPI Dashboard Framework" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="450" y="20" width="500" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Central Dashboard -->
+        <mxCell id="dashboard-center" value="KPI&#xa;DASHBOARD" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=4;fontSize=16;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="350" width="140" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- Sales KPIs Section -->
+        <mxCell id="sales-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=3;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="340" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="sales-title" value="SALES KPIs" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="180" y="90" width="140" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="sales-kpi1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="130" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sales-kpi1-name" value="Quote-to-Bind Ratio" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="110" y="130" width="150" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="sales-kpi1-val" value="Target: ≥25%" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#82b366;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="130" width="120" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="sales-kpi1-desc" value="Quotes converted to bound policies" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="110" y="155" width="280" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="sales-kpi2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="190" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sales-kpi2-name" value="Average Premium per Policy" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="110" y="190" width="180" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="sales-kpi2-val" value="Track trend" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#82b366;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="190" width="90" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="sales-kpi2-desc" value="GWP divided by policy count" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="110" y="215" width="280" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="sales-kpi3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="250" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sales-kpi3-name" value="New Business Growth Rate" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="110" y="250" width="180" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="sales-kpi3-val" value="Target: ≥10% YoY" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#82b366;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="250" width="110" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="sales-kpi3-desc" value="Year-over-year new policy growth" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="110" y="275" width="280" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Claims KPIs Section -->
+        <mxCell id="claims-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=3;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="80" width="340" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="claims-title" value="CLAIMS KPIs" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="90" width="140" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="claims-kpi1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d79b00;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="130" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="claims-kpi1-name" value="Loss Ratio (Claims Ratio)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="130" width="180" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="claims-kpi1-val" value="Target: ≤65%" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#d79b00;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="130" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="claims-kpi1-desc" value="Claims paid / Premiums earned" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="155" width="280" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="claims-kpi2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d79b00;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="190" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="claims-kpi2-name" value="Average Claim Settlement Time" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="190" width="200" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="claims-kpi2-val" value="Target: ≤14 days" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#d79b00;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="190" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="claims-kpi2-desc" value="FNOL to settlement completion" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="215" width="280" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="claims-kpi3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d79b00;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="250" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="claims-kpi3-name" value="First Contact Resolution Rate" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="250" width="190" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="claims-kpi3-val" value="Target: ≥70%" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#d79b00;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="250" width="90" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="claims-kpi3-desc" value="Claims resolved in first interaction" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="275" width="280" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Operations KPIs Section -->
+        <mxCell id="ops-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=3;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="460" width="340" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="ops-title" value="OPERATIONS KPIs" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="150" y="470" width="200" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ops-kpi1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="510" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ops-kpi1-name" value="Net Promoter Score (NPS)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="110" y="510" width="180" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ops-kpi1-val" value="Target: ≥40" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#9673a6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="510" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ops-kpi1-desc" value="Customer satisfaction and loyalty measure" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="110" y="535" width="280" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ops-kpi2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="570" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ops-kpi2-name" value="Policy Retention Rate" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="110" y="570" width="150" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ops-kpi2-val" value="Target: ≥85%" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#9673a6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="570" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ops-kpi2-desc" value="Renewals / Expiring policies" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="110" y="595" width="280" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ops-kpi3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="630" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ops-kpi3-name" value="Straight-Through Processing" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="110" y="630" width="190" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ops-kpi3-val" value="Target: ≥60%" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#9673a6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="630" width="90" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ops-kpi3-desc" value="Auto-processed without manual intervention" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="110" y="655" width="280" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Technical KPIs Section -->
+        <mxCell id="tech-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="460" width="340" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-title" value="TECHNICAL KPIs" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="470" width="180" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="tech-kpi1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="510" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-kpi1-name" value="API Response Time (P95)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="510" width="180" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-kpi1-val" value="Target: ≤500ms" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="510" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-kpi1-desc" value="95th percentile API latency" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="535" width="280" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="tech-kpi2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="570" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-kpi2-name" value="System Availability (Uptime)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="570" width="180" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-kpi2-val" value="Target: ≥99.9%" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="570" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-kpi2-desc" value="Platform uptime SLA" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="595" width="280" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="tech-kpi3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="630" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-kpi3-name" value="Deployment Frequency" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="630" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-kpi3-val" value="Target: Weekly+" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="630" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-kpi3-desc" value="Production releases per week" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="655" width="280" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Connecting Lines to Dashboard -->
+        <mxCell id="line-sales" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=3;curved=1;flowAnimation=1;" edge="1" parent="1" source="sales-container" target="dashboard-center">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line-claims" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;curved=1;flowAnimation=1;" edge="1" parent="1" source="claims-container" target="dashboard-center">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line-ops" value="" style="endArrow=classic;html=1;strokeColor=#9673a6;strokeWidth=3;curved=1;flowAnimation=1;" edge="1" parent="1" source="ops-container" target="dashboard-center">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line-tech" value="" style="endArrow=classic;html=1;strokeColor=#6c8ebf;strokeWidth=3;curved=1;flowAnimation=1;" edge="1" parent="1" source="tech-container" target="dashboard-center">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- KPI Health Indicators -->
+        <mxCell id="health-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="520" width="420" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="health-title" value="KPI HEALTH STATUS INDICATORS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="560" y="530" width="260" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="health-green" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="560" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="health-green-text" value="On Target - Meeting or exceeding goal" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="550" y="560" width="220" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="health-yellow" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="600" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="health-yellow-text" value="At Risk - Within 10% of target" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="550" y="600" width="220" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="health-red" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="640" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="health-red-text" value="Critical - More than 10% below target" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="550" y="640" width="220" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Reporting Cadence -->
+        <mxCell id="cadence-title" value="Reporting Cadence:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="780" y="560" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cadence-daily" value="Daily" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="585" width="50" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="cadence-weekly" value="Weekly" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="585" width="50" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="cadence-monthly" value="Monthly" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="620" width="50" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="cadence-quarterly" value="Quarterly" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="620" width="50" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Combined Ratio Formula -->
+        <mxCell id="formula-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="730" width="420" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="formula-title" value="Combined Ratio = Loss Ratio + Expense Ratio" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="480" y="740" width="420" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="formula-desc" value="Target &lt; 100% indicates underwriting profit | &gt; 100% indicates loss" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="480" y="760" width="420" height="25" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

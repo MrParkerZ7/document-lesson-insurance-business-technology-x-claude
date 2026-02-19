@@ -1,0 +1,404 @@
+<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="Claude" version="22.1.0">
+  <diagram name="Event-Driven Architecture" id="event-driven-architecture">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Insurance Platform - Event-Driven Architecture" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="500" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- EVENT PRODUCERS (Left Side) -->
+        <mxCell id="producers-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="50" y="80" width="350" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="producers-label" value="EVENT PRODUCERS (Services)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="60" y="85" width="250" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Policy Service -->
+        <mxCell id="policy-svc" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="120" width="310" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="policy-label" value="Policy Service" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="80" y="125" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="policy-icon" value="Policy&#xa;Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="150" width="70" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="policy-events" value="Events Published:&#xa;- PolicyCreated&#xa;- PolicyIssued&#xa;- PolicyRenewed&#xa;- PolicyCancelled" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="160" y="145" width="200" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Claims Service -->
+        <mxCell id="claims-svc" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="220" width="310" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="claims-label" value="Claims Service" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="80" y="225" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="claims-icon" value="Claims&#xa;Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="250" width="70" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="claims-events" value="Events Published:&#xa;- ClaimSubmitted&#xa;- ClaimAssessed&#xa;- ClaimApproved&#xa;- ClaimRejected" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="160" y="245" width="200" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Payment Service -->
+        <mxCell id="payment-svc" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="320" width="310" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="payment-label" value="Payment Service" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="80" y="325" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="payment-icon" value="Payment&#xa;Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="350" width="70" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="payment-events" value="Events Published:&#xa;- PaymentReceived&#xa;- PaymentProcessed&#xa;- PaymentFailed&#xa;- RefundIssued" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="160" y="345" width="200" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Customer Service -->
+        <mxCell id="customer-svc" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="420" width="310" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="customer-label" value="Customer Service" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="80" y="425" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="customer-icon" value="Customer&#xa;Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="450" width="70" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="customer-events" value="Events Published:&#xa;- CustomerRegistered&#xa;- CustomerUpdated&#xa;- KYCCompleted&#xa;- CustomerDeactivated" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="160" y="445" width="200" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Quote Service -->
+        <mxCell id="quote-svc" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="520" width="310" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="quote-label" value="Quote Service" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="80" y="525" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="quote-icon" value="Quote&#xa;Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="545" width="70" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="quote-events" value="Events: QuoteCreated, QuoteAccepted, QuoteExpired" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="160" y="545" width="210" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows from Producers to Broker -->
+        <mxCell id="arr-policy" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="165" as="sourcePoint" />
+            <mxPoint x="500" y="165" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arr-claims" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="265" as="sourcePoint" />
+            <mxPoint x="500" y="265" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arr-payment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="365" as="sourcePoint" />
+            <mxPoint x="500" y="365" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arr-customer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="465" as="sourcePoint" />
+            <mxPoint x="500" y="465" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arr-quote" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="555" as="sourcePoint" />
+            <mxPoint x="500" y="555" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- EVENT BROKER (Center) -->
+        <mxCell id="broker-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="500" y="80" width="300" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="broker-label" value="EVENT BROKER (Apache Kafka)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="510" y="85" width="280" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Kafka Logo/Icon -->
+        <mxCell id="kafka-icon" value="KAFKA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#333333;fontSize=14;fontStyle=1;fontColor=#FFFFFF;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="115" width="100" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Topics -->
+        <mxCell id="topics-label" value="EVENT TOPICS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="575" y="165" width="150" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Policy Topic -->
+        <mxCell id="topic-policy" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d6b656;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="190" width="260" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="topic-policy-name" value="policy.events" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="530" y="195" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="topic-policy-partitions" value="Partitions: 12  |  Replication: 3  |  Retention: 7d" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="530" y="215" width="240" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Claims Topic -->
+        <mxCell id="topic-claims" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d6b656;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="255" width="260" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="topic-claims-name" value="claim.events" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="530" y="260" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="topic-claims-partitions" value="Partitions: 12  |  Replication: 3  |  Retention: 30d" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="530" y="280" width="240" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Payment Topic -->
+        <mxCell id="topic-payment" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d6b656;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="320" width="260" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="topic-payment-name" value="payment.events" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="530" y="325" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="topic-payment-partitions" value="Partitions: 8  |  Replication: 3  |  Retention: 90d" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="530" y="345" width="240" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Customer Topic -->
+        <mxCell id="topic-customer" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d6b656;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="385" width="260" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="topic-customer-name" value="customer.events" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="530" y="390" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="topic-customer-partitions" value="Partitions: 6  |  Replication: 3  |  Retention: 14d" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="530" y="410" width="240" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Notification Topic -->
+        <mxCell id="topic-notification" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d6b656;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="450" width="260" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="topic-notification-name" value="notification.events" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="530" y="455" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="topic-notification-partitions" value="Partitions: 4  |  Replication: 3  |  Retention: 3d" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="530" y="475" width="240" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Audit Topic -->
+        <mxCell id="topic-audit" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d6b656;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="515" width="260" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="topic-audit-name" value="audit.events" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="530" y="520" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="topic-audit-partitions" value="Partitions: 4  |  Replication: 3  |  Retention: 365d" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="530" y="540" width="240" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- EVENT CONSUMERS (Right Side) -->
+        <mxCell id="consumers-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="900" y="80" width="350" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="consumers-label" value="EVENT CONSUMERS" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="910" y="85" width="180" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Notification Consumer -->
+        <mxCell id="notif-consumer" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="120" width="310" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="notif-consumer-label" value="Notification Service" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="930" y="125" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="notif-consumer-icon" value="Notif&#xa;Consumer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="150" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="notif-consumer-subs" value="Subscribes: All topics&#xa;Actions: Email, SMS, Push" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="150" width="220" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Document Consumer -->
+        <mxCell id="doc-consumer" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="210" width="310" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="doc-consumer-label" value="Document Service" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="930" y="215" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="doc-consumer-icon" value="Doc&#xa;Consumer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="240" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="doc-consumer-subs" value="Subscribes: policy.events, claim.events&#xa;Actions: Generate PDFs, Store docs" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="240" width="220" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Reporting Consumer -->
+        <mxCell id="report-consumer" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="300" width="310" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="report-consumer-label" value="Reporting Service" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="930" y="305" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="report-consumer-icon" value="Report&#xa;Consumer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="330" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="report-consumer-subs" value="Subscribes: All topics&#xa;Actions: Data warehouse ETL, Analytics" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="330" width="220" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Audit Consumer -->
+        <mxCell id="audit-consumer" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="390" width="310" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="audit-consumer-label" value="Audit Service" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="930" y="395" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="audit-consumer-icon" value="Audit&#xa;Consumer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="420" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="audit-consumer-subs" value="Subscribes: All topics&#xa;Actions: Compliance logging, Archive" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="420" width="220" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Search Indexer Consumer -->
+        <mxCell id="search-consumer" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="480" width="310" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="search-consumer-label" value="Search Indexer" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="930" y="485" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="search-consumer-icon" value="Index&#xa;Consumer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="510" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="search-consumer-subs" value="Subscribes: policy, claim, customer events&#xa;Actions: Elasticsearch index updates" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="510" width="220" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows from Broker to Consumers -->
+        <mxCell id="arr-to-notif" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="160" as="sourcePoint" />
+            <mxPoint x="920" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arr-to-doc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="250" as="sourcePoint" />
+            <mxPoint x="920" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arr-to-report" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="340" as="sourcePoint" />
+            <mxPoint x="920" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arr-to-audit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="430" as="sourcePoint" />
+            <mxPoint x="920" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arr-to-search" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="520" as="sourcePoint" />
+            <mxPoint x="920" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- EVENT SCHEMA EXAMPLES -->
+        <mxCell id="schema-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;shadow=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="50" y="620" width="1200" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="schema-label" value="EVENT SCHEMA EXAMPLES (JSON)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="60" y="625" width="280" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- PolicyCreated Event -->
+        <mxCell id="event-policy" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="660" width="280" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="event-policy-title" value="PolicyCreated" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="80" y="665" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="event-policy-schema" value="{&#xa;  &quot;eventId&quot;: &quot;uuid&quot;,&#xa;  &quot;eventType&quot;: &quot;PolicyCreated&quot;,&#xa;  &quot;timestamp&quot;: &quot;2024-01-15T10:30:00Z&quot;,&#xa;  &quot;version&quot;: &quot;1.0&quot;,&#xa;  &quot;payload&quot;: {&#xa;    &quot;policyId&quot;: &quot;POL-12345&quot;,&#xa;    &quot;customerId&quot;: &quot;CUST-001&quot;,&#xa;    &quot;productCode&quot;: &quot;AUTO-BASIC&quot;,&#xa;    &quot;premium&quot;: 1200.00,&#xa;    &quot;effectiveDate&quot;: &quot;2024-02-01&quot;&#xa;  }&#xa;}" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#333333;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="80" y="685" width="260" height="150" as="geometry" />
+        </mxCell>
+
+        <!-- ClaimSubmitted Event -->
+        <mxCell id="event-claim" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="660" width="280" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="event-claim-title" value="ClaimSubmitted" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="380" y="665" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="event-claim-schema" value="{&#xa;  &quot;eventId&quot;: &quot;uuid&quot;,&#xa;  &quot;eventType&quot;: &quot;ClaimSubmitted&quot;,&#xa;  &quot;timestamp&quot;: &quot;2024-01-15T14:22:00Z&quot;,&#xa;  &quot;version&quot;: &quot;1.0&quot;,&#xa;  &quot;payload&quot;: {&#xa;    &quot;claimId&quot;: &quot;CLM-67890&quot;,&#xa;    &quot;policyId&quot;: &quot;POL-12345&quot;,&#xa;    &quot;claimType&quot;: &quot;COLLISION&quot;,&#xa;    &quot;incidentDate&quot;: &quot;2024-01-14&quot;,&#xa;    &quot;estimatedAmount&quot;: 5000.00&#xa;  }&#xa;}" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#333333;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="380" y="685" width="260" height="150" as="geometry" />
+        </mxCell>
+
+        <!-- PaymentReceived Event -->
+        <mxCell id="event-payment" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="660" width="280" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="event-payment-title" value="PaymentReceived" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="680" y="665" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="event-payment-schema" value="{&#xa;  &quot;eventId&quot;: &quot;uuid&quot;,&#xa;  &quot;eventType&quot;: &quot;PaymentReceived&quot;,&#xa;  &quot;timestamp&quot;: &quot;2024-01-15T09:15:00Z&quot;,&#xa;  &quot;version&quot;: &quot;1.0&quot;,&#xa;  &quot;payload&quot;: {&#xa;    &quot;paymentId&quot;: &quot;PAY-11111&quot;,&#xa;    &quot;policyId&quot;: &quot;POL-12345&quot;,&#xa;    &quot;amount&quot;: 1200.00,&#xa;    &quot;currency&quot;: &quot;USD&quot;,&#xa;    &quot;paymentMethod&quot;: &quot;CARD&quot;&#xa;  }&#xa;}" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#333333;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="680" y="685" width="260" height="150" as="geometry" />
+        </mxCell>
+
+        <!-- Event Properties -->
+        <mxCell id="event-props" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="660" width="260" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="event-props-title" value="Event Properties" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="980" y="665" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="event-props-list" value="Standard Headers:&#xa;- eventId: Unique identifier (UUID)&#xa;- eventType: Event name&#xa;- timestamp: ISO 8601 format&#xa;- version: Schema version&#xa;- correlationId: Request tracing&#xa;- source: Originating service&#xa;&#xa;Guarantees:&#xa;- At-least-once delivery&#xa;- Ordering within partition&#xa;- Idempotent consumers" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="980" y="685" width="240" height="150" as="geometry" />
+        </mxCell>
+
+        <!-- Legend -->
+        <mxCell id="legend-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="880" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-title" value="Legend:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="60" y="885" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="leg1" value="" style="rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="60" y="910" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="leg1t" value="Producers" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="85" y="907" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="leg2" value="" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="150" y="910" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="leg2t" value="Event Broker" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="175" y="907" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="leg3" value="" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="260" y="910" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="leg3t" value="Consumers" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="285" y="907" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="leg4" value="" style="rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="360" y="910" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="leg4t" value="Security" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="385" y="907" width="50" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

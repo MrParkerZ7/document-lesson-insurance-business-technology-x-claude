@@ -1,0 +1,280 @@
+<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="Claude" version="22.1.0">
+  <diagram name="API Error Handling" id="error-handling">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="API Error Handling Flow" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="500" y="20" width="400" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Client Error Section (4xx) -->
+        <mxCell id="client-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="650" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="client-title" value="CLIENT ERRORS (4xx) - Request Problem" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="100" y="90" width="350" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- 400 Bad Request -->
+        <mxCell id="err-400" value="400&#xa;Bad Request" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="130" width="90" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="err-400-desc" value="• Invalid JSON format&#xa;• Missing required fields&#xa;• Type validation failed" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="100" y="180" width="130" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- 401 Unauthorized -->
+        <mxCell id="err-401" value="401&#xa;Unauthorized" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="130" width="90" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="err-401-desc" value="• Missing auth token&#xa;• Expired JWT&#xa;• Invalid credentials" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="210" y="180" width="120" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- 403 Forbidden -->
+        <mxCell id="err-403" value="403&#xa;Forbidden" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="130" width="90" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="err-403-desc" value="• Insufficient permissions&#xa;• Resource access denied&#xa;• Role not authorized" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="320" y="180" width="130" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- 404 Not Found -->
+        <mxCell id="err-404" value="404&#xa;Not Found" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="130" width="90" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="err-404-desc" value="• Policy not found&#xa;• Claim ID invalid&#xa;• Resource deleted" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="430" y="180" width="120" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- 409 Conflict -->
+        <mxCell id="err-409" value="409&#xa;Conflict" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="130" width="90" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="err-409-desc" value="• Duplicate policy #&#xa;• Concurrent update&#xa;• State conflict" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="540" y="180" width="120" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- 422 Unprocessable -->
+        <mxCell id="err-422" value="422&#xa;Unprocessable" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="130" width="90" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="err-422-desc" value="• Business rule violation&#xa;• Invalid state transition&#xa;• Premium too low" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="640" y="180" width="130" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Client Error Response Format -->
+        <mxCell id="client-format" value="Client Error Response Format:&#xa;{&#xa;  &quot;error&quot;: {&#xa;    &quot;code&quot;: &quot;VALIDATION_ERROR&quot;,&#xa;    &quot;message&quot;: &quot;Invalid request data&quot;,&#xa;    &quot;details&quot;: [&#xa;      { &quot;field&quot;: &quot;email&quot;, &quot;issue&quot;: &quot;Invalid format&quot; }&#xa;    ],&#xa;    &quot;request_id&quot;: &quot;req-abc123&quot;&#xa;  }&#xa;}" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=9;align=left;spacingLeft=8;verticalAlign=top;spacingTop=5;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="100" y="230" width="250" height="160" as="geometry" />
+        </mxCell>
+
+        <!-- Server Error Section (5xx) -->
+        <mxCell id="server-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="750" y="80" width="290" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="server-title" value="SERVER ERRORS (5xx)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="770" y="90" width="200" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- 500 Internal -->
+        <mxCell id="err-500" value="500&#xa;Internal Error" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="130" width="100" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="err-500-desc" value="• Unhandled exception&#xa;• Database error&#xa;• Null pointer" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="770" y="180" width="120" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- 502 Bad Gateway -->
+        <mxCell id="err-502" value="502&#xa;Bad Gateway" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="130" width="100" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="err-502-desc" value="• Upstream failure&#xa;• Service unreachable&#xa;• Invalid response" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="890" y="180" width="130" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- 503 Service Unavailable -->
+        <mxCell id="err-503" value="503&#xa;Unavailable" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6e6e6;strokeColor=#999999;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="235" width="100" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="err-503-desc" value="• Maintenance mode&#xa;• Overloaded&#xa;• Rate limited" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="770" y="285" width="120" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- 504 Gateway Timeout -->
+        <mxCell id="err-504" value="504&#xa;Timeout" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6e6e6;strokeColor=#999999;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="235" width="100" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="err-504-desc" value="• Slow query&#xa;• External timeout&#xa;• Long computation" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="890" y="285" width="120" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Retry Logic Section -->
+        <mxCell id="retry-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="400" width="500" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="retry-title" value="RETRY LOGIC WITH EXPONENTIAL BACKOFF" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="100" y="410" width="380" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Retry Flow -->
+        <mxCell id="retry-req" value="Request" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="460" width="80" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="retry-check" value="Success?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="450" width="80" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="retry-success" value="Return&#xa;Response" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="420" width="80" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="retry-retryable" value="Retryable?&#xa;(5xx, timeout)" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=9;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="500" width="100" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="retry-wait" value="Wait&#xa;(backoff)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="590" width="80" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="retry-fail" value="Return&#xa;Error" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=10;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="510" width="80" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Retry Flow Arrows -->
+        <mxCell id="ra1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;endArrow=block;endFill=1;flowAnimation=1;" edge="1" parent="1" source="retry-req" target="retry-check">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ra2" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;endArrow=block;endFill=1;fontSize=9;fontStyle=2;" edge="1" parent="1" source="retry-check" target="retry-success">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ra3" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;endArrow=block;endFill=1;fontSize=9;fontStyle=2;" edge="1" parent="1" source="retry-check" target="retry-retryable">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ra4" value="Yes &amp; attempts &lt; max" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=2;endArrow=block;endFill=1;fontSize=9;fontStyle=2;curved=1;" edge="1" parent="1" source="retry-retryable" target="retry-wait">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ra5" value="No / Max reached" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;endArrow=block;endFill=1;fontSize=9;fontStyle=2;" edge="1" parent="1" source="retry-retryable" target="retry-fail">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ra6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;" edge="1" parent="1" source="retry-wait" target="retry-req">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="610" />
+              <mxPoint x="140" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Backoff Schedule -->
+        <mxCell id="backoff-table" value="Backoff Schedule:&#xa;&#xa;Attempt 1: Wait 1s&#xa;Attempt 2: Wait 2s&#xa;Attempt 3: Wait 4s&#xa;Attempt 4: Wait 8s&#xa;Max attempts: 4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=9;align=left;spacingLeft=8;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="460" y="420" width="110" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- Circuit Breaker Section -->
+        <mxCell id="cb-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="400" width="440" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="cb-title" value="CIRCUIT BREAKER PATTERN" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="620" y="410" width="280" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Circuit States -->
+        <mxCell id="cb-closed" value="CLOSED&#xa;(Normal)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="470" width="90" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cb-open" value="OPEN&#xa;(Blocked)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="470" width="90" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cb-half" value="HALF-OPEN&#xa;(Testing)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="560" width="90" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Circuit Breaker Arrows -->
+        <mxCell id="cba1" value="Failure threshold&#xa;exceeded" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;fontSize=8;fontStyle=2;" edge="1" parent="1" source="cb-closed" target="cb-open">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="785" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="cba2" value="Timeout&#xa;elapsed" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d6b656;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;fontSize=8;fontStyle=2;" edge="1" parent="1" source="cb-open" target="cb-half">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="895" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="cba3" value="Test&#xa;succeeds" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;endArrow=block;endFill=1;curved=1;flowAnimation=1;fontSize=8;fontStyle=2;" edge="1" parent="1" source="cb-half" target="cb-closed">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="675" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="cba4" value="Test fails" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;endArrow=block;endFill=1;curved=1;fontSize=8;fontStyle=2;dashed=1;" edge="1" parent="1" source="cb-half" target="cb-open">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Circuit Breaker Config -->
+        <mxCell id="cb-config" value="Circuit Breaker Config:&#xa;&#xa;failure_threshold: 5&#xa;success_threshold: 2&#xa;timeout_seconds: 30&#xa;half_open_max_calls: 3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=9;align=left;spacingLeft=8;verticalAlign=top;spacingTop=5;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="880" y="560" width="150" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- Benefits -->
+        <mxCell id="cb-benefits" value="Benefits:&#xa;• Prevents cascade failures&#xa;• Protects downstream services&#xa;• Enables graceful degradation&#xa;• Fast failure response" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=9;align=left;spacingLeft=8;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="620" y="640" width="200" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Legend -->
+        <mxCell id="legend-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="720" width="350" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-title" value="Error Categories" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="100" y="725" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="leg1" value="" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="100" y="750" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="leg1t" value="Client Error (Don't retry)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="130" y="748" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="leg2" value="" style="rounded=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="100" y="775" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="leg2t" value="Server Error (May retry)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="130" y="773" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="leg3" value="" style="rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="270" y="750" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="leg3t" value="Auth/Security" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="300" y="748" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="leg4" value="" style="rounded=1;fillColor=#e6e6e6;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="270" y="775" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="leg4t" value="Infrastructure" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="300" y="773" width="80" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
