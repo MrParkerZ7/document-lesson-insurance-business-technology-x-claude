@@ -162,7 +162,7 @@ Start Here
 | 03 - Integration Testing | [README](./lesson-09-testing-strategies/03-integration-testing/README.md) | [09.3 Integration Testing](./lesson-09-testing-strategies/03-integration-testing/09.3-integration-testing.drawio) |
 | 04 - End-to-End Testing | [README](./lesson-09-testing-strategies/04-end-to-end-testing/README.md) | [09.4 End-to-End Testing](./lesson-09-testing-strategies/04-end-to-end-testing/09.4-end-to-end-testing.drawio) |
 | 05 - Test Data Management | [README](./lesson-09-testing-strategies/05-test-data-management/README.md) | [09.5 Test Data Management](./lesson-09-testing-strategies/05-test-data-management/09.5-test-data-management.drawio) |
-| 06 - Testing Best Practices | [README](./lesson-09-testing-strategies/06-testing-best-practices/README.md) | - |
+| 06 - Testing Best Practices | [README](./lesson-09-testing-strategies/06-testing-best-practices/README.md) | [09.6 Testing Best Practices](./lesson-09-testing-strategies/06-testing-best-practices/09.6-testing-best-practices.drawio) |
 
 ---
 

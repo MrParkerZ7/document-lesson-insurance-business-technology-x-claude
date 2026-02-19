@@ -4,6 +4,14 @@
 
 ---
 
+## Diagram
+
+![Testing Best Practices](./09.6-testing-best-practices.drawio.png)
+
+> Source: [09.6-testing-best-practices.drawio](./09.6-testing-best-practices.drawio)
+
+---
+
 ## Overview
 
 This section covers insurance-specific test scenarios and coverage guidelines to ensure comprehensive testing of insurance systems.
