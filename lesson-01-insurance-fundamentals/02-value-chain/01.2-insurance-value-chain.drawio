@@ -24,7 +24,7 @@
         </mxCell>
 
         <!-- Arrow 1 -->
-        <mxCell id="arrow1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=3;endArrow=block;endFill=1;" edge="1" parent="1" source="product-design" target="sales">
+        <mxCell id="arrow1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=3;endArrow=block;endFill=1;flowAnimation=1;" edge="1" parent="1" source="product-design" target="sales">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
@@ -37,7 +37,7 @@
         </mxCell>
 
         <!-- Arrow 2 -->
-        <mxCell id="arrow2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=3;endArrow=block;endFill=1;" edge="1" parent="1" source="sales" target="underwriting">
+        <mxCell id="arrow2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=3;endArrow=block;endFill=1;flowAnimation=1;" edge="1" parent="1" source="sales" target="underwriting">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
@@ -50,7 +50,7 @@
         </mxCell>
 
         <!-- Arrow 3 -->
-        <mxCell id="arrow3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=3;endArrow=block;endFill=1;" edge="1" parent="1" source="underwriting" target="policy-admin">
+        <mxCell id="arrow3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=3;endArrow=block;endFill=1;flowAnimation=1;" edge="1" parent="1" source="underwriting" target="policy-admin">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
@@ -63,7 +63,7 @@
         </mxCell>
 
         <!-- Arrow 4 -->
-        <mxCell id="arrow4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=3;endArrow=block;endFill=1;" edge="1" parent="1" source="policy-admin" target="claims">
+        <mxCell id="arrow4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=3;endArrow=block;endFill=1;flowAnimation=1;" edge="1" parent="1" source="policy-admin" target="claims">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 

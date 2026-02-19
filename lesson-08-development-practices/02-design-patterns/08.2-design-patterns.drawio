@@ -124,22 +124,22 @@
           <mxGeometry x="360" y="440" width="70" height="40" as="geometry" />
         </mxCell>
 
-        <mxCell id="st-arr1" value="quote" style="endArrow=classic;html=1;strokeColor=#9673a6;strokeWidth=1;fontSize=9;" edge="1" parent="1" source="draft-state" target="quoted-state">
+        <mxCell id="st-arr1" value="quote" style="endArrow=classic;html=1;strokeColor=#9673a6;strokeWidth=1;fontSize=9;flowAnimation=1;" edge="1" parent="1" source="draft-state" target="quoted-state">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="st-arr2" value="propose" style="endArrow=classic;html=1;strokeColor=#9673a6;strokeWidth=1;fontSize=9;" edge="1" parent="1" source="quoted-state" target="proposed-state">
+        <mxCell id="st-arr2" value="propose" style="endArrow=classic;html=1;strokeColor=#9673a6;strokeWidth=1;fontSize=9;flowAnimation=1;" edge="1" parent="1" source="quoted-state" target="proposed-state">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="st-arr3" value="issue" style="endArrow=classic;html=1;strokeColor=#9673a6;strokeWidth=1;fontSize=9;" edge="1" parent="1" source="proposed-state" target="active-state">
+        <mxCell id="st-arr3" value="issue" style="endArrow=classic;html=1;strokeColor=#9673a6;strokeWidth=1;fontSize=9;flowAnimation=1;" edge="1" parent="1" source="proposed-state" target="active-state">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="st-arr4" value="lapse" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=1;fontSize=9;" edge="1" parent="1" source="active-state" target="lapsed-state">
+        <mxCell id="st-arr4" value="lapse" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=1;fontSize=9;flowAnimation=1;" edge="1" parent="1" source="active-state" target="lapsed-state">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="st-arr5" value="cancel" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=1;fontSize=9;" edge="1" parent="1" source="active-state" target="cancelled-state">
+        <mxCell id="st-arr5" value="cancel" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=1;fontSize=9;flowAnimation=1;" edge="1" parent="1" source="active-state" target="cancelled-state">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="st-arr6" value="reinstate" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=1;fontSize=9;curved=1;" edge="1" parent="1" source="lapsed-state" target="active-state">
+        <mxCell id="st-arr6" value="reinstate" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=1;fontSize=9;curved=1;flowAnimation=1;" edge="1" parent="1" source="lapsed-state" target="active-state">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="320" y="420" />
@@ -174,16 +174,16 @@
           <mxGeometry x="730" y="450" width="90" height="40" as="geometry" />
         </mxCell>
 
-        <mxCell id="obs-arr1" value="publish" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=1;fontSize=9;" edge="1" parent="1" source="event-pub" target="event-bus">
+        <mxCell id="obs-arr1" value="publish" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=1;fontSize=9;flowAnimation=1;" edge="1" parent="1" source="event-pub" target="event-bus">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="obs-arr2" value="" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=1;dashed=1;" edge="1" parent="1" source="event-bus" target="sub1">
+        <mxCell id="obs-arr2" value="" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=1;dashed=1;flowAnimation=1;" edge="1" parent="1" source="event-bus" target="sub1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="obs-arr3" value="" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=1;dashed=1;" edge="1" parent="1" source="event-bus" target="sub2">
+        <mxCell id="obs-arr3" value="" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=1;dashed=1;flowAnimation=1;" edge="1" parent="1" source="event-bus" target="sub2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="obs-arr4" value="" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=1;dashed=1;" edge="1" parent="1" source="event-bus" target="sub3">
+        <mxCell id="obs-arr4" value="" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=1;dashed=1;flowAnimation=1;" edge="1" parent="1" source="event-bus" target="sub3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="observer-desc" value="Decoupled event handling for notifications, billing, analytics" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
