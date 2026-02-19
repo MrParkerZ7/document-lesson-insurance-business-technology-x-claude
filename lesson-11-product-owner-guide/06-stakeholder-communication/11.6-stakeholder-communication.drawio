@@ -155,85 +155,85 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="channels-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;strokeWidth=2;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="500" y="480" width="380" height="260" as="geometry"/>
+                    <mxGeometry x="500" y="540" width="380" height="260" as="geometry"/>
                 </mxCell>
                 <mxCell id="channels-title" value="COMMUNICATION CHANNELS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#333333;" parent="1" vertex="1">
-                    <mxGeometry x="580" y="490" width="220" height="25" as="geometry"/>
+                    <mxGeometry x="580" y="550" width="220" height="25" as="geometry"/>
                 </mxCell>
                 <mxCell id="channel1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="520" y="525" width="160" height="55" as="geometry"/>
+                    <mxGeometry x="520" y="585" width="160" height="55" as="geometry"/>
                 </mxCell>
                 <mxCell id="channel1-icon" value="Sprint Reviews" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#82b366;" parent="1" vertex="1">
-                    <mxGeometry x="520" y="530" width="160" height="20" as="geometry"/>
+                    <mxGeometry x="520" y="590" width="160" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="channel1-text" value="Bi-weekly demos&#xa;All stakeholders invited" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#666666;" parent="1" vertex="1">
-                    <mxGeometry x="520" y="550" width="160" height="30" as="geometry"/>
+                    <mxGeometry x="520" y="610" width="160" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="channel2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="700" y="525" width="160" height="55" as="geometry"/>
+                    <mxGeometry x="700" y="585" width="160" height="55" as="geometry"/>
                 </mxCell>
                 <mxCell id="channel2-icon" value="Release Notes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#6c8ebf;" parent="1" vertex="1">
-                    <mxGeometry x="700" y="530" width="160" height="20" as="geometry"/>
+                    <mxGeometry x="700" y="590" width="160" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="channel2-text" value="Per release&#xa;Technical + business impact" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#666666;" parent="1" vertex="1">
-                    <mxGeometry x="700" y="550" width="160" height="30" as="geometry"/>
+                    <mxGeometry x="700" y="610" width="160" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="channel3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="520" y="595" width="160" height="55" as="geometry"/>
+                    <mxGeometry x="520" y="655" width="160" height="55" as="geometry"/>
                 </mxCell>
                 <mxCell id="channel3-icon" value="Roadmap Updates" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#d79b00;" parent="1" vertex="1">
-                    <mxGeometry x="520" y="600" width="160" height="20" as="geometry"/>
+                    <mxGeometry x="520" y="660" width="160" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="channel3-text" value="Quarterly refresh&#xa;Strategy alignment" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#666666;" parent="1" vertex="1">
-                    <mxGeometry x="520" y="620" width="160" height="30" as="geometry"/>
+                    <mxGeometry x="520" y="680" width="160" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="channel4" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="700" y="595" width="160" height="55" as="geometry"/>
+                    <mxGeometry x="700" y="655" width="160" height="55" as="geometry"/>
                 </mxCell>
                 <mxCell id="channel4-icon" value="Status Reports" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#9673a6;" parent="1" vertex="1">
-                    <mxGeometry x="700" y="600" width="160" height="20" as="geometry"/>
+                    <mxGeometry x="700" y="660" width="160" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="channel4-text" value="Weekly summary&#xa;Risks &amp; blockers" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#666666;" parent="1" vertex="1">
-                    <mxGeometry x="700" y="620" width="160" height="30" as="geometry"/>
+                    <mxGeometry x="700" y="680" width="160" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="channel5" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="520" y="665" width="160" height="55" as="geometry"/>
+                    <mxGeometry x="520" y="725" width="160" height="55" as="geometry"/>
                 </mxCell>
                 <mxCell id="channel5-icon" value="Stakeholder Meetings" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#666666;" parent="1" vertex="1">
-                    <mxGeometry x="520" y="670" width="160" height="20" as="geometry"/>
+                    <mxGeometry x="520" y="730" width="160" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="channel5-text" value="Monthly sync&#xa;Priority discussions" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#666666;" parent="1" vertex="1">
-                    <mxGeometry x="520" y="690" width="160" height="30" as="geometry"/>
+                    <mxGeometry x="520" y="750" width="160" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="channel6" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="700" y="665" width="160" height="55" as="geometry"/>
+                    <mxGeometry x="700" y="725" width="160" height="55" as="geometry"/>
                 </mxCell>
                 <mxCell id="channel6-icon" value="Backlog Transparency" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#666666;" parent="1" vertex="1">
-                    <mxGeometry x="700" y="670" width="160" height="20" as="geometry"/>
+                    <mxGeometry x="700" y="730" width="160" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="channel6-text" value="Always accessible&#xa;Jira/Azure DevOps" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#666666;" parent="1" vertex="1">
-                    <mxGeometry x="700" y="690" width="160" height="30" as="geometry"/>
+                    <mxGeometry x="700" y="750" width="160" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="raci-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;strokeWidth=2;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="500" y="760" width="400" height="70" as="geometry"/>
+                    <mxGeometry x="500" y="820" width="400" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="raci-title" value="COMMUNICATION FREQUENCY" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#333333;" parent="1" vertex="1">
-                    <mxGeometry x="580" y="765" width="220" height="20" as="geometry"/>
+                    <mxGeometry x="580" y="825" width="220" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="freq-daily" value="Daily" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="520" y="790" width="60" height="25" as="geometry"/>
+                    <mxGeometry x="520" y="850" width="60" height="25" as="geometry"/>
                 </mxCell>
                 <mxCell id="freq-weekly" value="Weekly" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="595" y="790" width="60" height="25" as="geometry"/>
+                    <mxGeometry x="595" y="850" width="60" height="25" as="geometry"/>
                 </mxCell>
                 <mxCell id="freq-biweekly" value="Bi-weekly" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=9;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="670" y="790" width="60" height="25" as="geometry"/>
+                    <mxGeometry x="670" y="850" width="60" height="25" as="geometry"/>
                 </mxCell>
                 <mxCell id="freq-monthly" value="Monthly" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="745" y="790" width="60" height="25" as="geometry"/>
+                    <mxGeometry x="745" y="850" width="60" height="25" as="geometry"/>
                 </mxCell>
                 <mxCell id="freq-quarterly" value="Quarterly" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=9;shadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="820" y="790" width="60" height="25" as="geometry"/>
+                    <mxGeometry x="820" y="850" width="60" height="25" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

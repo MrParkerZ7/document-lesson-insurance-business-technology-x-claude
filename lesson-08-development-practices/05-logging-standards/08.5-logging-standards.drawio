@@ -1,279 +1,235 @@
-<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="Claude" version="22.1.0">
-  <diagram name="Logging Standards" id="logging-standards">
-    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="1">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-
-        <!-- Title -->
-        <mxCell id="title" value="Insurance System - Logging Standards" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="450" y="20" width="500" height="40" as="geometry" />
-        </mxCell>
-
-        <!-- Log Levels Pyramid -->
-        <mxCell id="levels-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="80" width="400" height="380" as="geometry" />
-        </mxCell>
-        <mxCell id="levels-title" value="LOG LEVELS (Severity)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="50" y="85" width="200" height="20" as="geometry" />
-        </mxCell>
-
-        <mxCell id="level-error" value="ERROR" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="170" y="115" width="100" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="error-desc" value="System failures, exceptions&#xa;Immediate attention required" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="285" y="115" width="145" height="40" as="geometry" />
-        </mxCell>
-
-        <mxCell id="level-warn" value="WARN" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="145" y="165" width="150" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="warn-desc" value="Potential issues, deprecated&#xa;usage, recoverable errors" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="305" y="165" width="130" height="40" as="geometry" />
-        </mxCell>
-
-        <mxCell id="level-info" value="INFO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="215" width="200" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="info-desc" value="Business events, state changes&#xa;Policy issued, Claim submitted" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="325" y="215" width="115" height="40" as="geometry" />
-        </mxCell>
-
-        <mxCell id="level-debug" value="DEBUG" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="95" y="265" width="250" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="debug-desc" value="Detailed execution flow&#xa;Development/troubleshooting" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="350" y="265" width="90" height="40" as="geometry" />
-        </mxCell>
-
-        <mxCell id="level-trace" value="TRACE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="70" y="315" width="300" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="trace-desc" value="Most granular, method entry/exit&#xa;Performance analysis" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="375" y="315" width="65" height="40" as="geometry" />
-        </mxCell>
-
-        <mxCell id="volume-arrow" value="" style="shape=flexArrow;endArrow=classic;html=1;strokeColor=#666666;fillColor=#f5f5f5;endWidth=15;endSize=5;width=10;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="60" y="140" as="sourcePoint" />
-            <mxPoint x="60" y="340" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="volume-label" value="Increasing&#xa;Volume" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;fontStyle=2;" vertex="1" parent="1">
-          <mxGeometry x="50" y="370" width="60" height="30" as="geometry" />
-        </mxCell>
-
-        <mxCell id="severity-arrow" value="" style="shape=flexArrow;endArrow=classic;html=1;strokeColor=#666666;fillColor=#f5f5f5;endWidth=15;endSize=5;width=10;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="60" y="340" as="sourcePoint" />
-            <mxPoint x="60" y="140" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="severity-label" value="Increasing&#xa;Severity" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;fontStyle=2;" vertex="1" parent="1">
-          <mxGeometry x="50" y="410" width="60" height="30" as="geometry" />
-        </mxCell>
-
-        <!-- Structured Logging Format -->
-        <mxCell id="struct-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="460" y="80" width="600" height="200" as="geometry" />
-        </mxCell>
-        <mxCell id="struct-title" value="STRUCTURED LOGGING FORMAT (JSON)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="470" y="85" width="350" height="20" as="geometry" />
-        </mxCell>
-
-        <mxCell id="struct-json" value="{&#xa;  &quot;timestamp&quot;: &quot;2024-01-15T10:30:45.123Z&quot;,&#xa;  &quot;level&quot;: &quot;INFO&quot;,&#xa;  &quot;correlationId&quot;: &quot;req-abc-123-xyz&quot;,&#xa;  &quot;service&quot;: &quot;policy-service&quot;,&#xa;  &quot;class&quot;: &quot;PolicyService&quot;,&#xa;  &quot;method&quot;: &quot;issuePolicy&quot;,&#xa;  &quot;message&quot;: &quot;Policy issued successfully&quot;,&#xa;  &quot;context&quot;: {&#xa;    &quot;policyId&quot;: &quot;POL-2024-001234&quot;,&#xa;    &quot;customerId&quot;: &quot;CUST-5678&quot;,&#xa;    &quot;productType&quot;: &quot;MOTOR&quot;,&#xa;    &quot;premium&quot;: 1250.00&#xa;  }&#xa;}" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;fontSize=10;align=left;verticalAlign=top;spacingLeft=10;spacingTop=5;fontFamily=Courier New;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="480" y="115" width="300" height="155" as="geometry" />
-        </mxCell>
-
-        <mxCell id="struct-fields" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="800" y="115" width="240" height="155" as="geometry" />
-        </mxCell>
-        <mxCell id="sf-title" value="Required Fields" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="800" y="120" width="240" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="sf1" value="timestamp: ISO 8601 with ms" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" vertex="1" parent="1">
-          <mxGeometry x="800" y="140" width="230" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="sf2" value="level: ERROR/WARN/INFO/DEBUG/TRACE" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" vertex="1" parent="1">
-          <mxGeometry x="800" y="160" width="230" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="sf3" value="correlationId: Request tracing ID" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" vertex="1" parent="1">
-          <mxGeometry x="800" y="180" width="230" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="sf4" value="service: Microservice name" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" vertex="1" parent="1">
-          <mxGeometry x="800" y="200" width="230" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="sf5" value="message: Human-readable description" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" vertex="1" parent="1">
-          <mxGeometry x="800" y="220" width="230" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="sf6" value="context: Business-specific data" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" vertex="1" parent="1">
-          <mxGeometry x="800" y="240" width="230" height="15" as="geometry" />
-        </mxCell>
-
-        <!-- Correlation ID Flow -->
-        <mxCell id="corr-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="460" y="300" width="600" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="corr-title" value="CORRELATION ID PROPAGATION" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="470" y="305" width="300" height="20" as="geometry" />
-        </mxCell>
-
-        <mxCell id="corr-client" value="Client&#xa;Request" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6c8ebf;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="480" y="340" width="70" height="50" as="geometry" />
-        </mxCell>
-
-        <mxCell id="corr-arr1" value="X-Correlation-ID" style="endArrow=classic;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;fontSize=8;" edge="1" parent="1" source="corr-client" target="corr-gateway">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-
-        <mxCell id="corr-gateway" value="API&#xa;Gateway" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="580" y="340" width="70" height="50" as="geometry" />
-        </mxCell>
-
-        <mxCell id="corr-arr2" value="" style="endArrow=classic;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;" edge="1" parent="1" source="corr-gateway" target="corr-policy">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-
-        <mxCell id="corr-policy" value="Policy&#xa;Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="680" y="340" width="70" height="50" as="geometry" />
-        </mxCell>
-
-        <mxCell id="corr-arr3" value="" style="endArrow=classic;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;" edge="1" parent="1" source="corr-policy" target="corr-billing">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-
-        <mxCell id="corr-billing" value="Billing&#xa;Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="780" y="340" width="70" height="50" as="geometry" />
-        </mxCell>
-
-        <mxCell id="corr-arr4" value="" style="endArrow=classic;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;" edge="1" parent="1" source="corr-billing" target="corr-notif">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-
-        <mxCell id="corr-notif" value="Notification&#xa;Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="880" y="340" width="70" height="50" as="geometry" />
-        </mxCell>
-
-        <mxCell id="corr-log1" value="LOG" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=8;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="580" y="400" width="70" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="corr-log2" value="LOG" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=8;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="680" y="400" width="70" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="corr-log3" value="LOG" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=8;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="780" y="400" width="70" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="corr-log4" value="LOG" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=8;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="880" y="400" width="70" height="20" as="geometry" />
-        </mxCell>
-
-        <mxCell id="corr-note" value="Same correlationId: req-abc-123-xyz across all services" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=10;fontColor=#666666;fontStyle=2;" vertex="1" parent="1">
-          <mxGeometry x="580" y="430" width="370" height="15" as="geometry" />
-        </mxCell>
-
-        <!-- Log Aggregation -->
-        <mxCell id="agg-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="480" width="400" height="200" as="geometry" />
-        </mxCell>
-        <mxCell id="agg-title" value="LOG AGGREGATION PIPELINE" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="50" y="485" width="280" height="20" as="geometry" />
-        </mxCell>
-
-        <mxCell id="agg-apps" value="Microservices" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="60" y="520" width="80" height="40" as="geometry" />
-        </mxCell>
-
-        <mxCell id="agg-arr1" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=2;curved=1;flowAnimation=1;" edge="1" parent="1" source="agg-apps" target="agg-ship">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-
-        <mxCell id="agg-ship" value="Log Shipper&#xa;(Filebeat)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d79b00;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="170" y="520" width="80" height="40" as="geometry" />
-        </mxCell>
-
-        <mxCell id="agg-arr2" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=2;curved=1;flowAnimation=1;" edge="1" parent="1" source="agg-ship" target="agg-kafka">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-
-        <mxCell id="agg-kafka" value="Kafka&#xa;(Buffer)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="280" y="520" width="80" height="40" as="geometry" />
-        </mxCell>
-
-        <mxCell id="agg-arr3" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=2;curved=1;flowAnimation=1;" edge="1" parent="1" source="agg-kafka" target="agg-elastic">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-
-        <mxCell id="agg-elastic" value="Elasticsearch&#xa;(Storage)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="170" y="590" width="80" height="50" as="geometry" />
-        </mxCell>
-
-        <mxCell id="agg-arr4" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=2;curved=1;flowAnimation=1;" edge="1" parent="1" source="agg-elastic" target="agg-kibana">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-
-        <mxCell id="agg-kibana" value="Kibana&#xa;(Visualization)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="280" y="595" width="80" height="40" as="geometry" />
-        </mxCell>
-
-        <!-- Logging Guidelines -->
-        <mxCell id="guide-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="460" y="480" width="600" height="200" as="geometry" />
-        </mxCell>
-        <mxCell id="guide-title" value="INSURANCE DOMAIN LOGGING GUIDELINES" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="470" y="485" width="400" height="20" as="geometry" />
-        </mxCell>
-
-        <mxCell id="guide-do" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="480" y="515" width="270" height="150" as="geometry" />
-        </mxCell>
-        <mxCell id="guide-do-title" value="DO LOG" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="480" y="520" width="270" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="do1" value="Policy lifecycle events (issued, renewed)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" vertex="1" parent="1">
-          <mxGeometry x="485" y="540" width="255" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="do2" value="Claim status changes (FNOL, approved)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" vertex="1" parent="1">
-          <mxGeometry x="485" y="560" width="255" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="do3" value="Payment transactions (success/failure)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" vertex="1" parent="1">
-          <mxGeometry x="485" y="580" width="255" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="do4" value="Underwriting decisions with reason" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" vertex="1" parent="1">
-          <mxGeometry x="485" y="600" width="255" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="do5" value="External API calls (KYC, payment)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" vertex="1" parent="1">
-          <mxGeometry x="485" y="620" width="255" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="do6" value="Authentication/authorization events" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" vertex="1" parent="1">
-          <mxGeometry x="485" y="640" width="255" height="15" as="geometry" />
-        </mxCell>
-
-        <mxCell id="guide-dont" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="770" y="515" width="270" height="150" as="geometry" />
-        </mxCell>
-        <mxCell id="guide-dont-title" value="DO NOT LOG" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="770" y="520" width="270" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="dont1" value="PII (SSN, full names, addresses)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" vertex="1" parent="1">
-          <mxGeometry x="775" y="540" width="255" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="dont2" value="Health/medical information" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" vertex="1" parent="1">
-          <mxGeometry x="775" y="560" width="255" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="dont3" value="Full credit card numbers" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" vertex="1" parent="1">
-          <mxGeometry x="775" y="580" width="255" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="dont4" value="Passwords or API keys" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" vertex="1" parent="1">
-          <mxGeometry x="775" y="600" width="255" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="dont5" value="Full request/response bodies" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" vertex="1" parent="1">
-          <mxGeometry x="775" y="620" width="255" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="dont6" value="Sensitive business logic details" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" vertex="1" parent="1">
-          <mxGeometry x="775" y="640" width="255" height="15" as="geometry" />
-        </mxCell>
-
-      </root>
-    </mxGraphModel>
-  </diagram>
+<mxfile host="65bd71144e">
+    <diagram name="Logging Standards" id="logging-standards">
+        <mxGraphModel dx="1126" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="1">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="Insurance System - Logging Standards" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="20" width="500" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="levels-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="80" width="480" height="380" as="geometry"/>
+                </mxCell>
+                <mxCell id="levels-title" value="LOG LEVELS (Severity)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="85" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="level-error" value="ERROR" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="115" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="error-desc" value="System failures, exceptions&#xa;Immediate attention required" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="285" y="115" width="145" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="level-warn" value="WARN" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="145" y="165" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="warn-desc" value="Potential issues, deprecated&#xa;usage, recoverable errors" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="305" y="165" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="level-info" value="INFO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="215" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="info-desc" value="Business events, state changes&#xa;Policy issued, Claim submitted" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="325" y="215" width="115" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="level-debug" value="DEBUG" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="95" y="265" width="250" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="debug-desc" value="Detailed execution flow&#xa;Development/troubleshooting" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="265" width="90" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="level-trace" value="TRACE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="315" width="300" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="trace-desc" value="Most granular, method entry/exit&#xa;Performance analysis" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="375" y="315" width="65" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="volume-arrow" value="" style="shape=flexArrow;endArrow=classic;html=1;strokeColor=#666666;fillColor=#f5f5f5;endWidth=15;endSize=5;width=10;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="60" y="140" as="sourcePoint"/>
+                        <mxPoint x="60" y="340" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="volume-label" value="Increasing&#xa;Volume" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;fontStyle=2;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="370" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="severity-arrow" value="" style="shape=flexArrow;endArrow=classic;html=1;strokeColor=#666666;fillColor=#f5f5f5;endWidth=15;endSize=5;width=10;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="60" y="340" as="sourcePoint"/>
+                        <mxPoint x="60" y="140" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="severity-label" value="Increasing&#xa;Severity" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=9;fontColor=#666666;fontStyle=2;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="410" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="struct-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="80" width="600" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="struct-title" value="STRUCTURED LOGGING FORMAT (JSON)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="570" y="85" width="350" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="struct-json" value="{&#xa;  &quot;timestamp&quot;: &quot;2024-01-15T10:30:45.123Z&quot;,&#xa;  &quot;level&quot;: &quot;INFO&quot;,&#xa;  &quot;correlationId&quot;: &quot;req-abc-123-xyz&quot;,&#xa;  &quot;service&quot;: &quot;policy-service&quot;,&#xa;  &quot;class&quot;: &quot;PolicyService&quot;,&#xa;  &quot;method&quot;: &quot;issuePolicy&quot;,&#xa;  &quot;message&quot;: &quot;Policy issued successfully&quot;,&#xa;  &quot;context&quot;: {&#xa;    &quot;policyId&quot;: &quot;POL-2024-001234&quot;,&#xa;    &quot;customerId&quot;: &quot;CUST-5678&quot;,&#xa;    &quot;productType&quot;: &quot;MOTOR&quot;,&#xa;    &quot;premium&quot;: 1250.00&#xa;  }&#xa;}" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;fontSize=10;align=left;verticalAlign=top;spacingLeft=10;spacingTop=5;fontFamily=Courier New;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="115" width="300" height="155" as="geometry"/>
+                </mxCell>
+                <mxCell id="struct-fields" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="900" y="115" width="240" height="155" as="geometry"/>
+                </mxCell>
+                <mxCell id="sf-title" value="Required Fields" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="900" y="120" width="240" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="sf1" value="timestamp: ISO 8601 with ms" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" parent="1" vertex="1">
+                    <mxGeometry x="900" y="140" width="230" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="sf2" value="level: ERROR/WARN/INFO/DEBUG/TRACE" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" parent="1" vertex="1">
+                    <mxGeometry x="900" y="160" width="230" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="sf3" value="correlationId: Request tracing ID" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" parent="1" vertex="1">
+                    <mxGeometry x="900" y="180" width="230" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="sf4" value="service: Microservice name" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" parent="1" vertex="1">
+                    <mxGeometry x="900" y="200" width="230" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="sf5" value="message: Human-readable description" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" parent="1" vertex="1">
+                    <mxGeometry x="900" y="220" width="230" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="sf6" value="context: Business-specific data" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" parent="1" vertex="1">
+                    <mxGeometry x="900" y="240" width="230" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="corr-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="300" width="600" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="corr-title" value="CORRELATION ID PROPAGATION" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="570" y="305" width="300" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="corr-client" value="Client&#xa;Request" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6c8ebf;fontSize=10;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="340" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="corr-arr1" value="X-Correlation-ID" style="endArrow=classic;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;fontSize=8;" parent="1" source="corr-client" target="corr-gateway" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="corr-gateway" value="API&#xa;Gateway" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="340" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="corr-arr2" value="" style="endArrow=classic;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;" parent="1" source="corr-gateway" target="corr-policy" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="corr-policy" value="Policy&#xa;Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="780" y="340" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="corr-arr3" value="" style="endArrow=classic;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;" parent="1" source="corr-policy" target="corr-billing" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="corr-billing" value="Billing&#xa;Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="880" y="340" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="corr-arr4" value="" style="endArrow=classic;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;" parent="1" source="corr-billing" target="corr-notif" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="corr-notif" value="Notification&#xa;Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="980" y="340" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="corr-log1" value="LOG" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=8;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="400" width="70" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="corr-log2" value="LOG" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=8;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="780" y="400" width="70" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="corr-log3" value="LOG" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=8;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="880" y="400" width="70" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="corr-log4" value="LOG" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=8;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="980" y="400" width="70" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="corr-note" value="Same correlationId: req-abc-123-xyz across all services" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=10;fontColor=#666666;fontStyle=2;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="430" width="370" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="agg-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="480" width="400" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="agg-title" value="LOG AGGREGATION PIPELINE" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="485" width="280" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="agg-apps" value="Microservices" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="520" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="agg-arr1" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=2;curved=1;flowAnimation=1;" parent="1" source="agg-apps" target="agg-ship" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="agg-ship" value="Log Shipper&#xa;(Filebeat)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d79b00;fontSize=10;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="520" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="agg-arr2" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=2;curved=1;flowAnimation=1;" parent="1" source="agg-ship" target="agg-kafka" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="agg-kafka" value="Kafka&#xa;(Buffer)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="520" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="agg-arr3" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=2;curved=1;flowAnimation=1;" parent="1" source="agg-kafka" target="agg-elastic" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="agg-elastic" value="Elasticsearch&#xa;(Storage)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="590" width="80" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="agg-arr4" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=2;curved=1;flowAnimation=1;" parent="1" source="agg-elastic" target="agg-kibana" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="agg-kibana" value="Kibana&#xa;(Visualization)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="595" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="guide-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="480" width="600" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="guide-title" value="INSURANCE DOMAIN LOGGING GUIDELINES" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#9673a6;" parent="1" vertex="1">
+                    <mxGeometry x="570" y="485" width="400" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="guide-do" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="515" width="270" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="guide-do-title" value="DO LOG" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="520" width="270" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="do1" value="Policy lifecycle events (issued, renewed)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" parent="1" vertex="1">
+                    <mxGeometry x="585" y="540" width="255" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="do2" value="Claim status changes (FNOL, approved)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" parent="1" vertex="1">
+                    <mxGeometry x="585" y="560" width="255" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="do3" value="Payment transactions (success/failure)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" parent="1" vertex="1">
+                    <mxGeometry x="585" y="580" width="255" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="do4" value="Underwriting decisions with reason" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" parent="1" vertex="1">
+                    <mxGeometry x="585" y="600" width="255" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="do5" value="External API calls (KYC, payment)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" parent="1" vertex="1">
+                    <mxGeometry x="585" y="620" width="255" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="do6" value="Authentication/authorization events" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" parent="1" vertex="1">
+                    <mxGeometry x="585" y="640" width="255" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="guide-dont" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="515" width="270" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="guide-dont-title" value="DO NOT LOG" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="520" width="270" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="dont1" value="PII (SSN, full names, addresses)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" parent="1" vertex="1">
+                    <mxGeometry x="875" y="540" width="255" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="dont2" value="Health/medical information" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" parent="1" vertex="1">
+                    <mxGeometry x="875" y="560" width="255" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="dont3" value="Full credit card numbers" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" parent="1" vertex="1">
+                    <mxGeometry x="875" y="580" width="255" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="dont4" value="Passwords or API keys" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" parent="1" vertex="1">
+                    <mxGeometry x="875" y="600" width="255" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="dont5" value="Full request/response bodies" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" parent="1" vertex="1">
+                    <mxGeometry x="875" y="620" width="255" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="dont6" value="Sensitive business logic details" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=9;fontColor=#666666;spacingLeft=5;" parent="1" vertex="1">
+                    <mxGeometry x="875" y="640" width="255" height="15" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
 </mxfile>

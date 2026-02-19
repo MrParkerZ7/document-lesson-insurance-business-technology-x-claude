@@ -1,213 +1,184 @@
-<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="Claude" version="22.1.0">
-  <diagram name="Access Control Model" id="access-control">
-    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="1">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-
-        <!-- Title -->
-        <mxCell id="title" value="Role-Based Access Control (RBAC) Model" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="450" y="20" width="500" height="40" as="geometry" />
-        </mxCell>
-
-        <!-- Users Section -->
-        <mxCell id="users-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;opacity=40;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="100" width="220" height="350" as="geometry" />
-        </mxCell>
-        <mxCell id="users-label" value="USERS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="120" y="110" width="80" height="30" as="geometry" />
-        </mxCell>
-
-        <!-- Individual Users -->
-        <mxCell id="user1" value="John Smith&#xa;(Administrator)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;shadow=1;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="90" y="160" width="30" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="user2" value="Mary Jones&#xa;(Underwriter)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;shadow=1;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="180" y="160" width="30" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="user3" value="Tom Wilson&#xa;(Claims Handler)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;shadow=1;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="90" y="280" width="30" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="user4" value="Lisa Brown&#xa;(Agent)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;shadow=1;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="180" y="280" width="30" height="50" as="geometry" />
-        </mxCell>
-
-        <!-- Roles Section -->
-        <mxCell id="roles-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;opacity=40;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="100" width="280" height="350" as="geometry" />
-        </mxCell>
-        <mxCell id="roles-label" value="ROLES" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="450" y="110" width="80" height="30" as="geometry" />
-        </mxCell>
-
-        <!-- Individual Roles -->
-        <mxCell id="role-admin" value="Administrator" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="395" y="155" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="role-underwriter" value="Underwriter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="395" y="220" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="role-claims" value="Claims Handler" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="395" y="285" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="role-agent" value="Insurance Agent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="395" y="350" width="120" height="40" as="geometry" />
-        </mxCell>
-
-        <!-- Permissions Section -->
-        <mxCell id="perms-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;opacity=40;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="710" y="100" width="280" height="350" as="geometry" />
-        </mxCell>
-        <mxCell id="perms-label" value="PERMISSIONS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="790" y="110" width="120" height="30" as="geometry" />
-        </mxCell>
-
-        <!-- Individual Permissions -->
-        <mxCell id="perm-full" value="Full Access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="750" y="150" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="perm-user-mgmt" value="User Management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="860" y="150" width="110" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="perm-quote-create" value="Create Quotes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="750" y="195" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="perm-risk-assess" value="Risk Assessment" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="860" y="195" width="110" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="perm-policy-approve" value="Approve Policies" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="750" y="240" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="perm-claim-view" value="View Claims" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="860" y="240" width="110" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="perm-claim-process" value="Process Claims" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="750" y="285" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="perm-settlement" value="Settlement Auth" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="860" y="285" width="110" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="perm-cust-view" value="View Customers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="750" y="330" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="perm-quote-submit" value="Submit Quotes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="860" y="330" width="110" height="30" as="geometry" />
-        </mxCell>
-
-        <!-- Resources Section -->
-        <mxCell id="res-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;opacity=40;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="1070" y="100" width="220" height="350" as="geometry" />
-        </mxCell>
-        <mxCell id="res-label" value="RESOURCES" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="1130" y="110" width="100" height="30" as="geometry" />
-        </mxCell>
-
-        <!-- Individual Resources -->
-        <mxCell id="res-policy" value="Policy&#xa;Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="1100" y="155" width="70" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="res-claims" value="Claims&#xa;Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="1190" y="155" width="70" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="res-customer" value="Customer&#xa;Data" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="1100" y="240" width="70" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="res-billing" value="Billing&#xa;System" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="1190" y="240" width="70" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="res-reports" value="Reports" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="1100" y="325" width="70" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="res-audit" value="Audit&#xa;Logs" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="1190" y="325" width="70" height="50" as="geometry" />
-        </mxCell>
-
-        <!-- Arrows: Users to Roles -->
-        <mxCell id="u2r1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" edge="1" parent="1" source="user1" target="role-admin">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="u2r2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" edge="1" parent="1" source="user2" target="role-underwriter">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="u2r3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" edge="1" parent="1" source="user3" target="role-claims">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="u2r4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" edge="1" parent="1" source="user4" target="role-agent">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-
-        <!-- Arrows: Roles to Permissions -->
-        <mxCell id="r2p1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" edge="1" parent="1" source="role-admin" target="perm-full">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="r2p2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" edge="1" parent="1" source="role-admin" target="perm-user-mgmt">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="r2p3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" edge="1" parent="1" source="role-underwriter" target="perm-quote-create">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="r2p4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" edge="1" parent="1" source="role-underwriter" target="perm-risk-assess">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="r2p5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" edge="1" parent="1" source="role-underwriter" target="perm-policy-approve">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="r2p6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" edge="1" parent="1" source="role-claims" target="perm-claim-view">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="r2p7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" edge="1" parent="1" source="role-claims" target="perm-claim-process">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="r2p8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" edge="1" parent="1" source="role-claims" target="perm-settlement">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="r2p9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" edge="1" parent="1" source="role-agent" target="perm-cust-view">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="r2p10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" edge="1" parent="1" source="role-agent" target="perm-quote-submit">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-
-        <!-- Arrows: Permissions to Resources (selected examples) -->
-        <mxCell id="p2r1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" edge="1" parent="1" source="perm-policy-approve" target="res-policy">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="p2r2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" edge="1" parent="1" source="perm-claim-process" target="res-claims">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="p2r3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" edge="1" parent="1" source="perm-cust-view" target="res-customer">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="p2r4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" edge="1" parent="1" source="perm-settlement" target="res-billing">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-
-        <!-- Legend -->
-        <mxCell id="legend-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="480" width="500" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-title" value="RBAC Flow: Users are assigned Roles, Roles grant Permissions, Permissions provide access to Resources" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=0;fontColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="60" y="490" width="480" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-1" value="External (Users)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="70" y="525" width="100" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-2" value="Security (Roles)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="185" y="525" width="100" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-3" value="Services (Permissions)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="300" y="525" width="120" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-4" value="Data (Resources)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="435" y="525" width="100" height="25" as="geometry" />
-        </mxCell>
-
-        <!-- Subtitle -->
-        <mxCell id="subtitle" value="Principle of Least Privilege: Users only get access they need for their role" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="450" y="55" width="500" height="25" as="geometry" />
-        </mxCell>
-
-      </root>
-    </mxGraphModel>
-  </diagram>
+<mxfile host="65bd71144e">
+    <diagram name="Access Control Model" id="access-control">
+        <mxGraphModel dx="886" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="1">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="Role-Based Access Control (RBAC) Model" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="20" width="500" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="users-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;opacity=40;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="100" width="220" height="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="users-label" value="USERS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="110" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="user1" value="John Smith&#xa;(Administrator)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;shadow=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="160" width="30" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="user2" value="Mary Jones&#xa;(Underwriter)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;shadow=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="160" width="30" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="user3" value="Tom Wilson&#xa;(Claims Handler)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;shadow=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="280" width="30" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="user4" value="Lisa Brown&#xa;(Agent)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;shadow=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="280" width="30" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="roles-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;opacity=40;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="100" width="280" height="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="roles-label" value="ROLES" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#9673a6;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="110" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="role-admin" value="Administrator" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="395" y="155" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="role-underwriter" value="Underwriter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="395" y="220" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="role-claims" value="Claims Handler" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="395" y="285" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="role-agent" value="Insurance Agent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="395" y="350" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="perms-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;opacity=40;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="100" width="280" height="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="perms-label" value="PERMISSIONS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="790" y="110" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="perm-full" value="Full Access" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="750" y="150" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="perm-user-mgmt" value="User Management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="860" y="150" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="perm-quote-create" value="Create Quotes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="750" y="195" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="perm-risk-assess" value="Risk Assessment" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="860" y="195" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="perm-policy-approve" value="Approve Policies" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="750" y="240" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="perm-claim-view" value="View Claims" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="860" y="240" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="perm-claim-process" value="Process Claims" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="750" y="285" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="perm-settlement" value="Settlement Auth" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="860" y="285" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="perm-cust-view" value="View Customers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="750" y="330" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="perm-quote-submit" value="Submit Quotes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="860" y="330" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="res-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;opacity=40;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="1070" y="100" width="220" height="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="res-label" value="RESOURCES" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="1130" y="110" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="res-policy" value="Policy&#xa;Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="1100" y="155" width="70" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="res-claims" value="Claims&#xa;Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="1190" y="155" width="70" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="res-customer" value="Customer&#xa;Data" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="1100" y="240" width="70" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="res-billing" value="Billing&#xa;System" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="1190" y="240" width="70" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="res-reports" value="Reports" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="1100" y="325" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="res-audit" value="Audit&#xa;Logs" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="1190" y="325" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="u2r1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" parent="1" source="user1" target="role-admin" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="u2r2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" parent="1" source="user2" target="role-underwriter" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="u2r3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" parent="1" source="user3" target="role-claims" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="u2r4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" parent="1" source="user4" target="role-agent" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="r2p1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" parent="1" source="role-admin" target="perm-full" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="r2p2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" parent="1" source="role-admin" target="perm-user-mgmt" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="r2p3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" parent="1" source="role-underwriter" target="perm-quote-create" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="r2p4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" parent="1" source="role-underwriter" target="perm-risk-assess" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="r2p5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" parent="1" source="role-underwriter" target="perm-policy-approve" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="r2p6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" parent="1" source="role-claims" target="perm-claim-view" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="r2p7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" parent="1" source="role-claims" target="perm-claim-process" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="r2p8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" parent="1" source="role-claims" target="perm-settlement" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="r2p9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" parent="1" source="role-agent" target="perm-cust-view" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="r2p10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" parent="1" source="role-agent" target="perm-quote-submit" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p2r1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" parent="1" source="perm-policy-approve" target="res-policy" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p2r2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" parent="1" source="perm-claim-process" target="res-claims" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p2r3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" parent="1" source="perm-cust-view" target="res-customer" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p2r4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;curved=1;flowAnimation=1;endArrow=blockThin;endFill=1;" parent="1" source="perm-settlement" target="res-billing" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="480" width="500" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend-title" value="RBAC Flow: Users are assigned Roles, Roles grant Permissions, Permissions provide access to Resources" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=0;fontColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="490" width="480" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend-1" value="External (Users)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="525" width="100" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend-2" value="Security (Roles)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="185" y="525" width="100" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend-3" value="Services (Permissions)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="525" width="120" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend-4" value="Data (Resources)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="435" y="525" width="100" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="subtitle" value="Principle of Least Privilege: Users only get access they need for their role" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=2;fontColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="55" width="500" height="25" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
 </mxfile>

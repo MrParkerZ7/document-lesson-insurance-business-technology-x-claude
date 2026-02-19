@@ -1,221 +1,184 @@
-<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="Claude" version="22.1.0">
-  <diagram name="Code Quality" id="code-quality">
-    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="1">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-
-        <!-- Title -->
-        <mxCell id="title" value="Code Quality Principles" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="450" y="20" width="300" height="40" as="geometry" />
-        </mxCell>
-
-        <!-- Clean Code Checklist -->
-        <mxCell id="checklist-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="80" width="320" height="340" as="geometry" />
-        </mxCell>
-        <mxCell id="checklist-title" value="Clean Code Checklist" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=14;fontColor=#1565C0;" vertex="1" parent="1">
-          <mxGeometry x="120" y="90" width="160" height="25" as="geometry" />
-        </mxCell>
-
-        <!-- Naming Section -->
-        <mxCell id="naming-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1976D2;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="55" y="125" width="290" height="75" as="geometry" />
-        </mxCell>
-        <mxCell id="naming-title" value="NAMING" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=11;fontColor=#1565C0;" vertex="1" parent="1">
-          <mxGeometry x="65" y="128" width="80" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="naming-items" value="✓ Names reveal intent&#xa;✓ Avoid abbreviations&#xa;✓ Consistent vocabulary&#xa;✓ Nouns for classes, verbs for methods" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="65" y="148" width="270" height="50" as="geometry" />
-        </mxCell>
-
-        <!-- Functions Section -->
-        <mxCell id="func-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1976D2;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="55" y="210" width="290" height="65" as="geometry" />
-        </mxCell>
-        <mxCell id="func-title" value="FUNCTIONS" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=11;fontColor=#1565C0;" vertex="1" parent="1">
-          <mxGeometry x="65" y="213" width="100" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="func-items" value="✓ Small (&lt;20 lines) · ✓ Do one thing&#xa;✓ Few parameters (≤3) · ✓ No side effects" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="65" y="235" width="270" height="35" as="geometry" />
-        </mxCell>
-
-        <!-- Comments Section -->
-        <mxCell id="comment-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1976D2;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="55" y="285" width="290" height="55" as="geometry" />
-        </mxCell>
-        <mxCell id="comment-title" value="COMMENTS" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=11;fontColor=#1565C0;" vertex="1" parent="1">
-          <mxGeometry x="65" y="288" width="100" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="comment-items" value="✓ Self-documenting code · ✓ Explain WHY not WHAT&#xa;✓ No commented-out code · ✓ Javadoc for public APIs" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="65" y="308" width="270" height="30" as="geometry" />
-        </mxCell>
-
-        <!-- Error Handling Section -->
-        <mxCell id="error-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1976D2;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="55" y="350" width="290" height="55" as="geometry" />
-        </mxCell>
-        <mxCell id="error-title" value="ERROR HANDLING" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=11;fontColor=#1565C0;" vertex="1" parent="1">
-          <mxGeometry x="65" y="353" width="130" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="error-items" value="✓ Use exceptions · ✓ Provide context&#xa;✓ Don't return null · ✓ Fail fast" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="65" y="373" width="270" height="30" as="geometry" />
-        </mxCell>
-
-        <!-- Code Metrics -->
-        <mxCell id="metrics-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="380" y="80" width="320" height="200" as="geometry" />
-        </mxCell>
-        <mxCell id="metrics-title" value="Code Metrics &amp; Targets" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=14;fontColor=#2E7D32;" vertex="1" parent="1">
-          <mxGeometry x="450" y="90" width="180" height="25" as="geometry" />
-        </mxCell>
-
-        <!-- Metrics Table -->
-        <mxCell id="m-header1" value="Metric" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#A5D6A7;strokeColor=#2E7D32;fontStyle=1;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="395" y="125" width="130" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="m-header2" value="Target" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#A5D6A7;strokeColor=#2E7D32;fontStyle=1;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="525" y="125" width="70" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="m-header3" value="Tool" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#A5D6A7;strokeColor=#2E7D32;fontStyle=1;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="595" y="125" width="90" height="25" as="geometry" />
-        </mxCell>
-
-        <mxCell id="m1-1" value="Cyclomatic Complexity" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="395" y="150" width="130" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="m1-2" value="&lt; 10" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=9;fontStyle=1;fontColor=#1B5E20;" vertex="1" parent="1">
-          <mxGeometry x="525" y="150" width="70" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="m1-3" value="SonarQube" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="595" y="150" width="90" height="25" as="geometry" />
-        </mxCell>
-
-        <mxCell id="m2-1" value="Method Length" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="395" y="175" width="130" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="m2-2" value="&lt; 20 lines" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=9;fontStyle=1;fontColor=#1B5E20;" vertex="1" parent="1">
-          <mxGeometry x="525" y="175" width="70" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="m2-3" value="Checkstyle" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="595" y="175" width="90" height="25" as="geometry" />
-        </mxCell>
-
-        <mxCell id="m3-1" value="Class Length" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="395" y="200" width="130" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="m3-2" value="&lt; 300 lines" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=9;fontStyle=1;fontColor=#1B5E20;" vertex="1" parent="1">
-          <mxGeometry x="525" y="200" width="70" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="m3-3" value="Checkstyle" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="595" y="200" width="90" height="25" as="geometry" />
-        </mxCell>
-
-        <mxCell id="m4-1" value="Test Coverage" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="395" y="225" width="130" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="m4-2" value="&gt; 80%" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=9;fontStyle=1;fontColor=#1B5E20;" vertex="1" parent="1">
-          <mxGeometry x="525" y="225" width="70" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="m4-3" value="JaCoCo" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="595" y="225" width="90" height="25" as="geometry" />
-        </mxCell>
-
-        <mxCell id="m5-1" value="Code Duplication" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="395" y="250" width="130" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="m5-2" value="&lt; 3%" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=9;fontStyle=1;fontColor=#1B5E20;" vertex="1" parent="1">
-          <mxGeometry x="525" y="250" width="70" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="m5-3" value="SonarQube" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="595" y="250" width="90" height="25" as="geometry" />
-        </mxCell>
-
-        <!-- Good vs Bad Examples -->
-        <mxCell id="examples-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="720" y="80" width="320" height="340" as="geometry" />
-        </mxCell>
-        <mxCell id="examples-title" value="Naming Examples" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=14;fontColor=#E65100;" vertex="1" parent="1">
-          <mxGeometry x="800" y="90" width="160" height="25" as="geometry" />
-        </mxCell>
-
-        <!-- Good Examples -->
-        <mxCell id="good-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#388E3C;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="735" y="125" width="290" height="130" as="geometry" />
-        </mxCell>
-        <mxCell id="good-title" value="✓ GOOD" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=12;fontColor=#2E7D32;" vertex="1" parent="1">
-          <mxGeometry x="745" y="130" width="80" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="good-code" value="int daysSinceLastPayment;&#xa;List&lt;Policy&gt; expiredPolicies;&#xa;boolean isEligibleForRenewal;&#xa;&#xa;fetchCustomer();&#xa;fetchPolicy();&#xa;fetchClaim();" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;fontFamily=Courier New;" vertex="1" parent="1">
-          <mxGeometry x="745" y="155" width="270" height="95" as="geometry" />
-        </mxCell>
-
-        <!-- Bad Examples -->
-        <mxCell id="bad-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#C62828;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="735" y="265" width="290" height="140" as="geometry" />
-        </mxCell>
-        <mxCell id="bad-title" value="✗ BAD" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=12;fontColor=#C62828;" vertex="1" parent="1">
-          <mxGeometry x="745" y="270" width="80" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="bad-code" value="int d;&#xa;List&lt;Policy&gt; list1;&#xa;boolean flag;&#xa;&#xa;getCustomer();    // inconsistent&#xa;retrievePolicy(); // vocabulary&#xa;fetchClaim();" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;fontFamily=Courier New;" vertex="1" parent="1">
-          <mxGeometry x="745" y="295" width="270" height="100" as="geometry" />
-        </mxCell>
-
-        <!-- SOLID Principles -->
-        <mxCell id="solid-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#7B1FA2;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="440" width="660" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="solid-title" value="SOLID Principles" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=14;fontColor=#7B1FA2;" vertex="1" parent="1">
-          <mxGeometry x="50" y="445" width="150" height="25" as="geometry" />
-        </mxCell>
-
-        <mxCell id="s-box" value="S" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#7B1FA2;shadow=1;fontStyle=1;fontSize=16;fontColor=#7B1FA2;" vertex="1" parent="1">
-          <mxGeometry x="60" y="480" width="40" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="s-text" value="Single Responsibility&#xa;One reason to change" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="55" y="525" width="100" height="30" as="geometry" />
-        </mxCell>
-
-        <mxCell id="o-box" value="O" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#7B1FA2;shadow=1;fontStyle=1;fontSize=16;fontColor=#7B1FA2;" vertex="1" parent="1">
-          <mxGeometry x="180" y="480" width="40" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="o-text" value="Open/Closed&#xa;Open for extension" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="170" y="525" width="100" height="30" as="geometry" />
-        </mxCell>
-
-        <mxCell id="l-box" value="L" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#7B1FA2;shadow=1;fontStyle=1;fontSize=16;fontColor=#7B1FA2;" vertex="1" parent="1">
-          <mxGeometry x="300" y="480" width="40" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="l-text" value="Liskov Substitution&#xa;Subtypes substitutable" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="285" y="525" width="110" height="30" as="geometry" />
-        </mxCell>
-
-        <mxCell id="i-box" value="I" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#7B1FA2;shadow=1;fontStyle=1;fontSize=16;fontColor=#7B1FA2;" vertex="1" parent="1">
-          <mxGeometry x="420" y="480" width="40" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="i-text" value="Interface Segregation&#xa;Small interfaces" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="405" y="525" width="110" height="30" as="geometry" />
-        </mxCell>
-
-        <mxCell id="d-box" value="D" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#7B1FA2;shadow=1;fontStyle=1;fontSize=16;fontColor=#7B1FA2;" vertex="1" parent="1">
-          <mxGeometry x="540" y="480" width="40" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="d-text" value="Dependency Inversion&#xa;Depend on abstractions" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="520" y="525" width="120" height="30" as="geometry" />
-        </mxCell>
-
-        <!-- Testing Principles -->
-        <mxCell id="testing-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F7FA;strokeColor=#00838F;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="720" y="440" width="320" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="testing-title" value="Testing Principles" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=14;fontColor=#00838F;" vertex="1" parent="1">
-          <mxGeometry x="800" y="445" width="160" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="testing-items" value="✓ One assert per test&#xa;✓ Test names describe behavior&#xa;✓ Tests are independent&#xa;✓ Fast and repeatable&#xa;✓ Arrange-Act-Assert pattern" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="740" y="475" width="280" height="80" as="geometry" />
-        </mxCell>
-
-      </root>
-    </mxGraphModel>
-  </diagram>
+<mxfile host="65bd71144e">
+    <diagram name="Code Quality" id="code-quality">
+        <mxGraphModel dx="1126" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="1">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="Code Quality Principles" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="20" width="300" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="checklist-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="80" width="320" height="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="checklist-title" value="Clean Code Checklist" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=14;fontColor=#1565C0;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="90" width="160" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="naming-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1976D2;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="125" width="290" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="naming-title" value="NAMING" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=11;fontColor=#1565C0;" parent="1" vertex="1">
+                    <mxGeometry x="65" y="128" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="naming-items" value="✓ Names reveal intent&#xa;✓ Avoid abbreviations&#xa;✓ Consistent vocabulary&#xa;✓ Nouns for classes, verbs for methods" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="65" y="148" width="270" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="func-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1976D2;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="210" width="290" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="func-title" value="FUNCTIONS" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=11;fontColor=#1565C0;" parent="1" vertex="1">
+                    <mxGeometry x="65" y="213" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="func-items" value="✓ Small (&lt;20 lines) · ✓ Do one thing&#xa;✓ Few parameters (≤3) · ✓ No side effects" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="65" y="235" width="270" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="comment-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1976D2;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="285" width="290" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="comment-title" value="COMMENTS" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=11;fontColor=#1565C0;" parent="1" vertex="1">
+                    <mxGeometry x="65" y="288" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="comment-items" value="✓ Self-documenting code · ✓ Explain WHY not WHAT&#xa;✓ No commented-out code · ✓ Javadoc for public APIs" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="65" y="308" width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="error-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1976D2;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="350" width="290" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="error-title" value="ERROR HANDLING" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=11;fontColor=#1565C0;" parent="1" vertex="1">
+                    <mxGeometry x="65" y="353" width="130" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="error-items" value="✓ Use exceptions · ✓ Provide context&#xa;✓ Don&#39;t return null · ✓ Fail fast" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="65" y="373" width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="metrics-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="80" width="320" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="metrics-title" value="Code Metrics &amp; Targets" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=14;fontColor=#2E7D32;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="90" width="180" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="m-header1" value="Metric" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#A5D6A7;strokeColor=#2E7D32;fontStyle=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="395" y="125" width="130" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="m-header2" value="Target" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#A5D6A7;strokeColor=#2E7D32;fontStyle=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="525" y="125" width="70" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="m-header3" value="Tool" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#A5D6A7;strokeColor=#2E7D32;fontStyle=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="595" y="125" width="90" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="m1-1" value="Cyclomatic Complexity" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="395" y="150" width="130" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="m1-2" value="&lt; 10" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=9;fontStyle=1;fontColor=#1B5E20;" parent="1" vertex="1">
+                    <mxGeometry x="525" y="150" width="70" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="m1-3" value="SonarQube" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="595" y="150" width="90" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="m2-1" value="Method Length" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="395" y="175" width="130" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="m2-2" value="&lt; 20 lines" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=9;fontStyle=1;fontColor=#1B5E20;" parent="1" vertex="1">
+                    <mxGeometry x="525" y="175" width="70" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="m2-3" value="Checkstyle" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="595" y="175" width="90" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="m3-1" value="Class Length" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="395" y="200" width="130" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="m3-2" value="&lt; 300 lines" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=9;fontStyle=1;fontColor=#1B5E20;" parent="1" vertex="1">
+                    <mxGeometry x="525" y="200" width="70" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="m3-3" value="Checkstyle" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="595" y="200" width="90" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="m4-1" value="Test Coverage" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="395" y="225" width="130" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="m4-2" value="&gt; 80%" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=9;fontStyle=1;fontColor=#1B5E20;" parent="1" vertex="1">
+                    <mxGeometry x="525" y="225" width="70" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="m4-3" value="JaCoCo" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="595" y="225" width="90" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="m5-1" value="Code Duplication" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="395" y="250" width="130" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="m5-2" value="&lt; 3%" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=9;fontStyle=1;fontColor=#1B5E20;" parent="1" vertex="1">
+                    <mxGeometry x="525" y="250" width="70" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="m5-3" value="SonarQube" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="595" y="250" width="90" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="examples-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="720" y="80" width="320" height="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="examples-title" value="Naming Examples" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=14;fontColor=#E65100;" parent="1" vertex="1">
+                    <mxGeometry x="800" y="90" width="160" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="good-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#388E3C;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="735" y="125" width="290" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="good-title" value="✓ GOOD" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=12;fontColor=#2E7D32;" parent="1" vertex="1">
+                    <mxGeometry x="745" y="130" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="good-code" value="int daysSinceLastPayment;&#xa;List&lt;Policy&gt; expiredPolicies;&#xa;boolean isEligibleForRenewal;&#xa;&#xa;fetchCustomer();&#xa;fetchPolicy();&#xa;fetchClaim();" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="745" y="155" width="270" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="bad-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#C62828;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="735" y="265" width="290" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="bad-title" value="✗ BAD" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=12;fontColor=#C62828;" parent="1" vertex="1">
+                    <mxGeometry x="745" y="270" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="bad-code" value="int d;&#xa;List&lt;Policy&gt; list1;&#xa;boolean flag;&#xa;&#xa;getCustomer();    // inconsistent&#xa;retrievePolicy(); // vocabulary&#xa;fetchClaim();" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;fontFamily=Courier New;" parent="1" vertex="1">
+                    <mxGeometry x="745" y="295" width="270" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="solid-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#7B1FA2;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="440" width="660" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="solid-title" value="SOLID Principles" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=14;fontColor=#7B1FA2;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="445" width="150" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="s-box" value="S" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#7B1FA2;shadow=1;fontStyle=1;fontSize=16;fontColor=#7B1FA2;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="480" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="s-text" value="Single Responsibility&#xa;One reason to change" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="525" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="o-box" value="O" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#7B1FA2;shadow=1;fontStyle=1;fontSize=16;fontColor=#7B1FA2;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="480" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="o-text" value="Open/Closed&#xa;Open for extension" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="525" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="l-box" value="L" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#7B1FA2;shadow=1;fontStyle=1;fontSize=16;fontColor=#7B1FA2;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="480" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l-text" value="Liskov Substitution&#xa;Subtypes substitutable" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="285" y="525" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="i-box" value="I" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#7B1FA2;shadow=1;fontStyle=1;fontSize=16;fontColor=#7B1FA2;" parent="1" vertex="1">
+                    <mxGeometry x="420" y="480" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="i-text" value="Interface Segregation&#xa;Small interfaces" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="405" y="525" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="d-box" value="D" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#7B1FA2;shadow=1;fontStyle=1;fontSize=16;fontColor=#7B1FA2;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="480" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="d-text" value="Dependency Inversion&#xa;Depend on abstractions" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="525" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="testing-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F7FA;strokeColor=#00838F;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="720" y="440" width="320" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="testing-title" value="Testing Principles" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=14;fontColor=#00838F;" parent="1" vertex="1">
+                    <mxGeometry x="800" y="445" width="160" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="testing-items" value="✓ One assert per test&#xa;✓ Test names describe behavior&#xa;✓ Tests are independent&#xa;✓ Fast and repeatable&#xa;✓ Arrange-Act-Assert pattern" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="740" y="475" width="280" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
 </mxfile>
