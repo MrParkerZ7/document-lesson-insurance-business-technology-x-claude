@@ -1,5 +1,13 @@
 # 8.6 Code Quality
 
+## Diagram
+
+![Code Quality](./08.6-code-quality.drawio.png)
+
+> Source: [08.6-code-quality.drawio](./08.6-code-quality.drawio)
+
+---
+
 ## Overview
 
 High-quality code is maintainable, readable, and reliable. This sub-lesson covers clean code principles that lead to sustainable software development in insurance systems.

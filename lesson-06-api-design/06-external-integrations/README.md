@@ -1,5 +1,13 @@
 # 6.6 External Integrations
 
+## Diagram
+
+![External Integrations](./06.6-external-integrations.drawio.png)
+
+> Source: [06.6-external-integrations.drawio](./06.6-external-integrations.drawio)
+
+---
+
 ## Overview
 
 This sub-lesson explores integration patterns for connecting with external systems like payment gateways, KYC services, and reinsurance systems.

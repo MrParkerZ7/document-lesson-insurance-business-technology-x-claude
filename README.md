@@ -120,7 +120,7 @@ Start Here
 | 03 - Error Handling | [README](./lesson-06-api-design/03-error-handling/README.md) | [06.3 Error Handling](./lesson-06-api-design/03-error-handling/06.3-error-handling.drawio) |
 | 04 - Pagination & Filtering | [README](./lesson-06-api-design/04-pagination-filtering/README.md) | [06.4 Pagination Filtering](./lesson-06-api-design/04-pagination-filtering/06.4-pagination-filtering.drawio) |
 | 05 - Event Schema Design | [README](./lesson-06-api-design/05-event-schema-design/README.md) | [06.5 Event Schema Design](./lesson-06-api-design/05-event-schema-design/06.5-event-schema-design.drawio) |
-| 06 - External Integrations | [README](./lesson-06-api-design/06-external-integrations/README.md) | - |
+| 06 - External Integrations | [README](./lesson-06-api-design/06-external-integrations/README.md) | [06.6 External Integrations](./lesson-06-api-design/06-external-integrations/06.6-external-integrations.drawio) |
 
 ---
 
@@ -148,7 +148,7 @@ Start Here
 | 03 - Naming Conventions | [README](./lesson-08-development-practices/03-naming-conventions/README.md) | [08.3 Naming Conventions](./lesson-08-development-practices/03-naming-conventions/08.3-naming-conventions.drawio) |
 | 04 - Error Handling | [README](./lesson-08-development-practices/04-error-handling/README.md) | [08.4 Error Handling](./lesson-08-development-practices/04-error-handling/08.4-error-handling.drawio) |
 | 05 - Logging Standards | [README](./lesson-08-development-practices/05-logging-standards/README.md) | [08.5 Logging Standards](./lesson-08-development-practices/05-logging-standards/08.5-logging-standards.drawio) |
-| 06 - Code Quality | [README](./lesson-08-development-practices/06-code-quality/README.md) | - |
+| 06 - Code Quality | [README](./lesson-08-development-practices/06-code-quality/README.md) | [08.6 Code Quality](./lesson-08-development-practices/06-code-quality/08.6-code-quality.drawio) |
 
 ---
 
